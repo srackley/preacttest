@@ -10,10 +10,30 @@
 
 
   #home-text {
+    position: relative;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%,rgba(255, 255, 255, 0.6) 100%);
     padding: 5vw;
-    border-radius: 20px;
+    border-radius: 10px;
 
+    h1 {
+      font-family: $script-font-family;
+      font-weight: 900;
+      margin-bottom: 2vw;
+    }
+
+    button {
+      margin-top: 2vw;
+      color: $primary-light-color;
+      border: solid 5px $secondary-medium-color;
+      background: $secondary-medium-color;transition: all .5s ease;
+
+      &:hover {
+        background: $primary-light-color;
+        border-color: $secondary-dark-color;
+        ;
+        color: $secondary-dark-color;
+      }
+    }
   }
 }
 }
