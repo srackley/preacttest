@@ -2,6 +2,7 @@ $font-family-main: "Raleway",
 sans-serif;
 $script-font-family: "Amatic SC", cursive;
 $primary-dark-color:#373A46;
+$primary-medium-color: rgb(208, 208, 208);
 $primary-light-color: white;
 $secondary-light-color: #E6F4E9;
 $secondary-medium-color: #59A99A;
@@ -61,3 +62,4 @@ body {
 
 @import '_sidebar';
 @import '_home';
+@import '_allprojects';

@@ -1,0 +1,27 @@
+  .oneProject {
+    margin: 20px;
+    padding: 1vw;
+    background-color: $secondary-light-color;
+    border-radius: 10px;
+
+    img {
+      width: 100%;
+      height: auto;
+      padding: 2px;
+    }
+
+    h2, p {
+      text-decoration: none;
+      color: $primary-dark-color;
+      padding: 5px;
+    }
+
+    h2 {
+      font-weight: 900;
+    }
+
+    p {
+      font-style: italic;
+    }
+
+  }

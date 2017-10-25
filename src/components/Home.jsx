@@ -10,7 +10,6 @@ const Home = () => (
         <p><Button bsStyle="success" bsSize="large" className="shadow1">Learn more</Button></p>
       </div>
     </Jumbotron>
-    <div />
   </div>
 );
 
