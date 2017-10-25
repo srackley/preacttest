@@ -1,11 +1,26 @@
 import React from 'react';
 import { pushRotate as Menu } from 'react-burger-menu';
+import FontAwesome from 'react-fontawesome';
 import { NavLink } from 'react-router-dom';
 
 function Sidebar() {
   return (
     <nav>
-      <Menu width="calc(120px + 4vw)" pageWrapId="page-wrap" outerContainerId="outer-container" >
+      <Menu
+        width="calc(120px + 4vw)"
+        pageWrapId="page-wrap"
+        outerContainerId="outer-container"
+        customBurgerIcon={
+          <FontAwesome
+            name="bars"
+            className="menu-button"
+          />}
+        customCrossIcon={
+          <FontAwesome
+            name="times"
+            className="menu-button"
+          />}
+      >
         <NavLink
           activeClassName="active"
           id="home"

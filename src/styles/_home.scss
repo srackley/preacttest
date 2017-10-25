@@ -1,0 +1,19 @@
+#home {
+
+.jumbotron {
+  background: url(https://static.pexels.com/photos/597331/pexels-photo-597331.jpeg) no-repeat center;
+  background-size: cover;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  padding: 10vw;
+
+
+  #home-text {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%,rgba(255, 255, 255, 0.6) 100%);
+    padding: 5vw;
+    border-radius: 20px;
+
+  }
+}
+}
