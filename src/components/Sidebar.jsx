@@ -1,17 +1,42 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { pushRotate as Menu } from 'react-burger-menu';
+import { NavLink } from 'react-router-dom';
 
-class Sidebar extends Component {
-  render() {
-    return (
-      <Menu pageWrapId="page-wrap" outerContainerId="outer-container" >
-        <a id="home" className="menu-item" href="/">Home</a>
-        <a id="about" className="menu-item" href="/about">About</a>
-        <a id="contact" className="menu-item" href="/contact">Contact</a>
-        <a className="menu-item--small" href="">Settings</a>
+function Sidebar() {
+  return (
+    <nav>
+      <Menu width="calc(120px + 4vw)" pageWrapId="page-wrap" outerContainerId="outer-container" >
+        <NavLink
+          activeClassName="active"
+          id="home"
+          className="menu-item"
+          to="/"
+        >Home
+        </NavLink>
+        <NavLink
+          activeClassName="active"
+          id="about"
+          className="menu-item"
+          to="/about"
+        >About
+        </NavLink>
+        <NavLink
+          activeClassName="active"
+          id="contact"
+          className="menu-item"
+          to="/contact"
+        >Contact
+        </NavLink>
+        <NavLink
+          activeClassName="active"
+          id="projects"
+          className="menu-item"
+          to="/projects"
+        >Projects
+        </NavLink>
       </Menu>
-    );
-  }
+    </nav>
+  );
 }
 
 export default Sidebar;
