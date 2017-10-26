@@ -37,10 +37,10 @@ function Sidebar() {
         </NavLink>
         <NavLink
           activeClassName="active"
-          id="contact"
+          id="services"
           className="menu-item"
-          to="/contact"
-        >Contact
+          to="/services"
+        >Services
         </NavLink>
         <NavLink
           activeClassName="active"
@@ -48,6 +48,13 @@ function Sidebar() {
           className="menu-item"
           to="/projects"
         >Projects
+        </NavLink>
+        <NavLink
+          activeClassName="active"
+          id="contact"
+          className="menu-item"
+          to="/contact"
+        >Contact
         </NavLink>
       </Menu>
     </nav>

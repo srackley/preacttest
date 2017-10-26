@@ -1,39 +1,50 @@
 #home {
+  width: 100%;
 
-.jumbotron {
-  background: url(https://static.pexels.com/photos/597331/pexels-photo-597331.jpeg) no-repeat center;
-  background-size: cover;
-  display: block;
-  height: 100vh;
-  width: 100vw;
-  padding: 10vw;
+  .jumbotron {
+    background: url(https://static.pexels.com/photos/597331/pexels-photo-597331.jpeg) no-repeat center;
+    background-size: cover;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    padding: 10vw;
 
 
-  #home-text {
-    position: relative;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%,rgba(255, 255, 255, 0.6) 100%);
-    padding: 5vw;
-    border-radius: 10px;
+    #home-text {
+      position: relative;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%,rgba(255, 255, 255, 0.6) 100%);
+      padding: 5vw;
+      border-radius: 10px;
 
-    h1 {
-      font-family: $script-font-family;
-      font-weight: 900;
-      margin-bottom: 2vw;
-    }
+      h1 {
+        font-family: $script-font-family;
+        font-weight: 900;
+        margin-bottom: 2vw;
+      }
 
-    button {
-      margin-top: 2vw;
-      color: $primary-light-color;
-      border: solid 5px $secondary-medium-color;
-      background: $secondary-medium-color;transition: all .5s ease;
+      button {
+        margin-top: 2vw;
+        color: $primary-light-color;
+        border: solid 5px $secondary-medium-color;
+        background: $secondary-medium-color;transition: all .5s ease;
 
-      &:hover {
-        background: $primary-light-color;
-        border-color: $secondary-dark-color;
-        ;
-        color: $secondary-dark-color;
+        &:hover {
+          background: $primary-light-color;
+          border-color: $secondary-dark-color;
+          ;
+          color: $secondary-dark-color;
+        }
       }
     }
   }
-}
+
+  .fa {
+  font-size: 144px;
+  }
+
+  .oneAbout {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
 }
