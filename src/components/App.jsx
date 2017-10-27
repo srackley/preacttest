@@ -6,11 +6,11 @@ import AllProjects from './AllProjects';
 import Services from './Services';
 import About from './About';
 import Contact from './Contact';
-import Navbar from './Navbar';
+import Header from './Navbar';
 
 const App = () => (
   <div id="outer-container">
-    <Navbar />
+    <Header />
     <main>
       <Switch>
         <Route exact path="/About" component={About} />

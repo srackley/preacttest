@@ -8,20 +8,21 @@
     height: 100vh;
     width: 100vw;
     padding: 40px;
+    margin: 0;
 
 
     #home-text {
       position: relative;
       border-radius: 10px;
       max-width: 300px;
-      margin-top: 150px;
+      margin-top: 5vh;
       text-align: center;
 
       h1 {
         margin-bottom: 2vw;
       }
 
-      button {
+      #learnMore {
         margin-top: 2vw;
         color: $primary-light-color;
         border: solid 5px $secondary-medium-color;
