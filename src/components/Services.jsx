@@ -3,7 +3,7 @@ import FontAwesome from 'react-fontawesome';
 import { PageHeader, Grid, Row, Col } from 'react-bootstrap';
 
 const Services = () => (
-  <div id="servicesSection" className="section">
+  <Grid id="servicesSection" className="section">
     <PageHeader>Services</PageHeader>
     <Row>
       <Col xs={12} md={4} className="item">
@@ -22,7 +22,7 @@ const Services = () => (
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
       </Col>
     </Row>
-  </div>
+  </Grid>
 );
 
 export default Services;

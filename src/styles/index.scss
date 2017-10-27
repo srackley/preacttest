@@ -1,6 +1,6 @@
-$font-family-main: "Raleway",
+$font-family-main: "Josefin Slab",
 sans-serif;
-$script-font-family: "Amatic SC", cursive;
+$script-font-family: "Fredericka the Great";
 $primary-dark-color:#373A46;
 $primary-medium-color: rgb(208, 208, 208);
 $primary-light-color: white;
@@ -37,7 +37,7 @@ body {
 
     h1 {
       font-family: $script-font-family;
-      font-weight: bold;
+      // font-weight: bold;
       font-size: calc(32px + 3vw);
       text-align: center;
     }
