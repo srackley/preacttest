@@ -7,7 +7,7 @@ function Sidebar() {
   return (
     <nav>
       <Menu
-        width="calc(120px + 4vw)"
+        width="calc(140px + 4vw)"
         pageWrapId="page-wrap"
         outerContainerId="outer-container"
         customBurgerIcon={

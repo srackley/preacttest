@@ -1,8 +1,9 @@
 import React from 'react';
+import { PageHeader, Grid, Row, Col } from 'react-bootstrap';
 
 const Services = () => (
-  <div>
-      Services here
+  <div id="servicesSection" className="section">
+    <PageHeader>Services</PageHeader>
   </div>
 );
 

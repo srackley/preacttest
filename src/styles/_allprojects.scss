@@ -1,29 +1,7 @@
   #projectsSection{
-    padding: 6vw 4vw 4vw 4vw;
 
-  .oneProject {
-    padding: 3vw;
-    background-color: $secondary-light-color;
-
-    img {
-      width: 100%;
-      height: auto;
-      padding: 2px;
-    }
-
-    h2, p {
-      text-decoration: none;
-      color: $primary-dark-color;
-      padding: 5px;
-    }
-
-    h2 {
-      font-weight: 900;
-    }
-
-    p {
-      font-style: italic;
-    }
-
+  .row {
+    display: flex;
+    flex-wrap: wrap;
   }
   }
