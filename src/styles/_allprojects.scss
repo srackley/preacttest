@@ -1,8 +1,9 @@
+  #projectsSection{
+    padding: 6vw 4vw 4vw 4vw;
+
   .oneProject {
-    margin: 20px;
-    padding: 1vw;
+    padding: 3vw;
     background-color: $secondary-light-color;
-    border-radius: 10px;
 
     img {
       width: 100%;
@@ -24,4 +25,5 @@
       font-style: italic;
     }
 
+  }
   }
