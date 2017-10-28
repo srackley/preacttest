@@ -1,0 +1,23 @@
+nav {
+  a {
+    text-decoration: none;
+    font-size: calc(10px + 2vw);
+    color: $secondary-dark-color;
+    padding: 9px;
+    margin-left: calc(1px + 1vw);
+    transition: all .3 ease;
+
+    &:hover {
+    text-decoration: none;
+    color: $primary-dark-color;
+    border-top: solid 4px $secondary-medium-color;
+    }
+
+
+  }
+  .active {
+    text-decoration: none;
+    border-top: solid 4px $secondary-medium-color;
+    background-color: $secondary-light-color;
+  }
+}

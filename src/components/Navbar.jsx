@@ -1,15 +1,15 @@
 import React from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => (
   <div>
     <Navbar fixedBottom>
       <Nav bsStyle="pills" >
-        <NavItem href="/">Home</NavItem>
-        <NavItem href="/about">About</NavItem>
-        <NavItem href="/services">Services</NavItem>
-        <NavItem href="/projects">Projects</NavItem>
-        <NavItem href="/contact">Contact</NavItem>
+        <NavLink to="/">Home</NavLink>        <NavLink to="/about">About</NavLink>
+        <NavLink to="/services">Services</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
       </Nav>
     </Navbar>
   </div>
