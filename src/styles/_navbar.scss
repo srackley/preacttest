@@ -1,23 +1,32 @@
 nav {
-  a {
-    text-decoration: none;
-    font-size: calc(10px + 2vw);
-    color: $secondary-dark-color;
-    padding: 9px;
-    margin-left: calc(1px + 1vw);
-    transition: all .3 ease;
-
-    &:hover {
-    text-decoration: none;
-    color: $primary-dark-color;
-    border-top: solid 4px $secondary-medium-color;
+    padding-top: .8em;
+    padding-bottom: .3em;
+    width: 100%;
+    background-color: rgbv(0, 0, 0, 0);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    transition: all .5s ease-in-out;
+    &.solid {
+        background-color: $primary-dark-color;
     }
-
-
-  }
-  .active {
-    text-decoration: none;
-    border-top: solid 4px $secondary-medium-color;
-    background-color: $secondary-light-color;
-  }
+    ul {
+        a {
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: calc(1em + 1vw);
+            color: $secondary-light-color;
+            padding: .4em;
+            transition: all .2s linear;
+            &:hover {
+                text-decoration: none;
+                color: $primary-light-color;
+            }
+        }
+        .active {
+            text-decoration: none;
+            background-color: $secondary-medium-color;
+        }
+    }
 }

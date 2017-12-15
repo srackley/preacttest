@@ -1,10 +1,11 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
-import { PageHeader, Grid, Row, Col } from 'react-bootstrap';
+import { Grid, Row, Col } from 'react-bootstrap';
+import Header from './Header';
 
 const Services = () => (
   <Grid id="servicesSection" className="section">
-    <PageHeader>Services</PageHeader>
+    <Header title="Services" />
     <Row>
       <Col xs={12} md={4} className="item">
         <FontAwesome name="html5" className="otto" />

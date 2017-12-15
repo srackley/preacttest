@@ -1,34 +1,126 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Modal from 'react-modal';
+import { Grid, Row, Col, Thumbnail } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { PageHeader, Grid, Row, Col, Thumbnail } from 'react-bootstrap';
+import Header from './Header';
 
-const AllProjects = () => (
-  <Grid id="projectsSection" className="section">
-    <PageHeader>Projects</PageHeader>
-    <Row className="row">
-      <Col xs={12} md={4} className="shadow3 shadow1 item">
-        <Link to="/projects/1">
-          <Thumbnail src="https://www.thebestdesigns.com/theme-images/themeforest-total-1.jpg" />
-        </Link>
-        <h2>Project 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </Col>
-      <Col xs={12} md={4} className="shadow3 shadow1 item">
-        <Link to="/projects/2">
-          <Thumbnail src="https://lh3.googleusercontent.com/4q3zGLnqa8NXp4zPaGovXslTWbTuFTJL_7HEPinkZFeXCQOoSEtKcq2MkpuqhP6u6Kqq-6nmykc=w640-h400-e365" />
-        </Link>
-        <h2>Project 2</h2>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
-      </Col>
-      <Col xs={12} md={4} className="shadow3 shadow1 item">
-        <Link to="/projects/3">
-          <Thumbnail src="https://conversionxl.com/wp-content/uploads/2012/11/cm.jpg" />
-        </Link>
-        <h2>Project 3</h2>
-        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-      </Col>
-    </Row>
-  </Grid>
-);
+const data = [
+  {
+    id: 1,
+    name: 'Grace Shopper',
+    position: 'Web Developer',
+    image: 'https://www.thebestdesigns.com/theme-images/themeforest-total-1.jpg',
+    description: 'An easy to use, modern e-commerce site with persistent state and user authentification',
+    date: 'November, 2017',
+    tags: ['e-commerce', 'OAUTH', ''],
+  },
+  {
+    id: 2,
+    name: 'Stackathon',
+    position: 'Solo Developer',
+    image: 'https://lh3.googleusercontent.com/4q3zGLnqa8NXp4zPaGovXslTWbTuFTJL_7HEPinkZFeXCQOoSEtKcq2MkpuqhP6u6Kqq-6nmykc=w640-h400-e365',
+    description: 'Something that has yet to be developed',
+    date: 'November, 2017',
+    tags: ['Solo Developer', 'Hackathon Project'],
+  },
+  {
+    id: 3,
+    name: 'Capstone',
+    position: 'Web Developer',
+    image: 'https://conversionxl.com/wp-content/uploads/2012/11/cm.jpg',
+    description: 'A grueling challenge that is developed over three weeks of crying and fights',
+    date: 'December, 2017',
+    tags: ['Longterm Project', 'Agile Development'],
+  },
+];
+
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+  },
+};
+
+class AllProjects extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      projects: [],
+      modalIsOpen: false,
+    };
+    this.openModal = this.openModal.bind(this);
+    this.afterOpenModal = this.afterOpenModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+  }
+
+  componentWillMount() {
+    this.setState({ projects: data });
+  }
+
+  openModal() {
+    this.setState({ modalIsOpen: true });
+  }
+
+  afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    this.subtitle.style.color = '#f00';
+  }
+
+  closeModal() {
+    this.setState({ modalIsOpen: false });
+  }
+
+
+  render() {
+    return (
+      <Grid className="section">
+        <Header title="Projects" />
+        <Row className="row">
+          {
+          this.state.projects.map(project => (
+            <Col xs={12} md={4} className=" item" key={project.id}>
+              <Link
+                to={`/projects/${project.id}`}
+                href={`/projects/${project.id}`}
+              >
+                <Thumbnail src={project.image} />
+                <h2>{project.name}</h2>
+                <p>{project.description}</p>
+              </Link>
+              <div>
+                <button onClick={this.openModal}>See More</button>
+
+                <Modal
+                  isOpen={this.state.modalIsOpen}
+                  onAfterOpen={this.afterOpenModal}
+                  onRequestClose={this.closeModal}
+                  style={customStyles}
+                  contentLabel={project.name}
+                >
+
+                  <h2 ref={subtitle => this.subtitle = subtitle}>{project.name}</h2>
+                  <button onClick={this.closeModal}>close</button>
+                  <div>{project.description}</div>
+                  <div>{project.date}</div>
+
+                  <form>
+                    <input />
+                    <button>tab navigation</button>
+                  </form>
+                </Modal>
+              </div>
+            </Col>
+          ))
+        }
+        </Row>
+      </Grid>
+    );
+  }
+}
 
 export default AllProjects;

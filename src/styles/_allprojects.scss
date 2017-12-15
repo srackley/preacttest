@@ -1,7 +1,19 @@
-  #projectsSection{
+  .section {
 
   .row {
     display: flex;
     flex-wrap: wrap;
+
+    .item {
+      transition: all .5s ease;
+
+      &:hover {
+        background-color: $primary-medium-color;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
   }
   }

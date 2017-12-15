@@ -1,11 +1,11 @@
 import React from 'react';
-import FontAwesome from 'react-fontawesome';
-import { PageHeader, Grid, Row, Col } from 'react-bootstrap';
+import { Grid } from 'react-bootstrap';
+import Header from './Header';
 
 
 const About = () => (
   <Grid id="aboutSection" className="section">
-    <PageHeader>About</PageHeader>
+    <Header title="About" />
   </Grid>
 );
 
