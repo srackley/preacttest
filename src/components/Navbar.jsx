@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import FontAwesome from 'react-fontawesome';
 
 class Navbar extends Component {
   constructor(props) {
@@ -29,7 +30,7 @@ class Navbar extends Component {
 
   toggleSocial() {
     const social = document.getElementById('social');
-    social.classList.toggle('hidden');
+    social.classList.toggle('show');
   }
 
   render() {
@@ -44,11 +45,11 @@ class Navbar extends Component {
           <NavLink to="/projects">Projects</NavLink>
           <button onClick={this.toggleSocial}> Contact
           </button>
-          <div id="social" className="hidden">
-            <button>LinkedIn</button>
-            <button>Github</button>
-            <button>Email</button>
-          </div>
+          <span id="social">
+            <button><FontAwesome name="linkedin" /></button>
+            <button><FontAwesome name="github" /></button>
+            <button><FontAwesome name="envelope" /></button>
+          </span>
         </ul>
       </nav>
     );

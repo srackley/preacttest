@@ -9,27 +9,54 @@ nav {
     z-index: 999;
     transition: all .5s ease-in-out;
     &.solid {
-        background-color: $primary-dark-color;
+        background-color: $primary-medium-color;
     }
     ul {
-        a {
-            border-radius: 30px;
+        a, button {
+            border: none;
+            background-color: transparent;
             text-decoration: none;
             font-size: calc(.7em + 1vw);
-            background-color: $secondary-medium-color;
-            color: $secondary-light-color;
-            padding: .4em;
+            color: $secondary-dark-color;
+            padding: .3em;
             margin: .5vw;
-            transition: all .2s linear;
+            transition: all .2s ease;
             &:hover {
                 text-decoration: none;
-                color: $primary-light-color;
+                border-bottom: solid 3px $primary-dark-color;
+            };
+            &:focus {
+                outline: none;
+            }
+            &.active {
+                text-decoration: none;
+                color: $primary-dark-color;
             }
         }
-        .active {
-            text-decoration: none;
-            color: $primary-light-color;
-            background-color: $secondary-dark-color;
+        #social {
+            position: absolute;
+            top: .8em;
+            right: -220px;
+            transition: all .7s ease-in-out;
+            &.show {
+                transform: translateX(-250px);
+            }
+        }
+
+        @media screen and (max-width: 560px) {
+            #social {
+                top: calc(.8em + 40px);
+                button {
+                    display: block;
+                }
+            }
+        }
+        @media screen and (min-width: 560px){
+            #social {
+                button {
+                    display: inline-block;
+                }
+            }
         }
     }
 }
