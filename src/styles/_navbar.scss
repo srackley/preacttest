@@ -15,9 +15,11 @@ nav {
         a {
             border-radius: 30px;
             text-decoration: none;
-            font-size: calc(1em + 1vw);
+            font-size: calc(.7em + 1vw);
+            background-color: $secondary-medium-color;
             color: $secondary-light-color;
             padding: .4em;
+            margin: .5vw;
             transition: all .2s linear;
             &:hover {
                 text-decoration: none;
@@ -26,7 +28,8 @@ nav {
         }
         .active {
             text-decoration: none;
-            background-color: $secondary-medium-color;
+            color: $primary-light-color;
+            background-color: $secondary-dark-color;
         }
     }
 }

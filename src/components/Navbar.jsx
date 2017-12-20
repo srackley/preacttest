@@ -6,6 +6,7 @@ class Navbar extends Component {
     super(props);
     this.state = { isSolid: false };
     this.handleScroll = this.handleScroll.bind(this);
+    this.toggleSocial = this.toggleSocial.bind(this);
   }
 
   componentDidMount() {
@@ -25,9 +26,11 @@ class Navbar extends Component {
     this.prev = window.scrollY;
   }
 
-  // toggleSocial() {
-  //   const social = document.getElementById('social');
-  // }
+
+  toggleSocial() {
+    const social = document.getElementById('social');
+    social.classList.toggle('hidden');
+  }
 
   render() {
     const classSolid = this.state.isSolid ? 'solid' : '';
@@ -39,11 +42,11 @@ class Navbar extends Component {
           <NavLink to="/about">About</NavLink>
           <NavLink to="/services">Services</NavLink>
           <NavLink to="/projects">Projects</NavLink>
-          <NavLink to="/contact"> Contact
-          </NavLink>
+          <button onClick={this.toggleSocial}> Contact
+          </button>
           <div id="social" className="hidden">
-            <button>LnkIn</button>
-            <button>Gthub</button>
+            <button>LinkedIn</button>
+            <button>Github</button>
             <button>Email</button>
           </div>
         </ul>

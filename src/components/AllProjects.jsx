@@ -1,36 +1,35 @@
 import React, { Component } from 'react';
 import Modal from 'react-modal';
 import { Grid, Row, Col, Thumbnail } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import Header from './Header';
 
 const data = [
   {
     id: 1,
-    name: 'Grace Shopper',
+    name: 'Cage Match',
     position: 'Web Developer',
-    image: 'https://www.thebestdesigns.com/theme-images/themeforest-total-1.jpg',
-    description: 'An easy to use, modern e-commerce site with persistent state and user authentification',
-    date: 'November, 2017',
-    tags: ['e-commerce', 'OAUTH', ''],
+    image: '/images/CageMatch.png',
+    description: 'An easy to use, modern e-commerce site with persistent state and user authentification. Cage Match is an e-commerce website for purchasing Nicholas Cage roles.',
+    date: 'November 2017',
+    tags: ['e-commerce', 'OAUTH', 'Express.js', 'Node.js', 'Passport', 'React', 'Sequelize', 'Webpack'],
   },
   {
     id: 2,
-    name: 'Stackathon',
+    name: 'Palimpsest',
     position: 'Solo Developer',
-    image: 'https://lh3.googleusercontent.com/4q3zGLnqa8NXp4zPaGovXslTWbTuFTJL_7HEPinkZFeXCQOoSEtKcq2MkpuqhP6u6Kqq-6nmykc=w640-h400-e365',
-    description: 'Something that has yet to be developed',
-    date: 'November, 2017',
-    tags: ['Solo Developer', 'Hackathon Project'],
+    image: '/images/Palimpsest.png',
+    description: 'Palimpsest is a prototype for a social e-Reader with the capability to share notes, highlights, and theories with friends who share the same book.',
+    date: 'November 2017',
+    tags: ['eReader', 'React', 'Firebase', 'Axios', 'ePub', 'Node.js', 'Webpack'],
   },
   {
     id: 3,
-    name: 'Capstone',
+    name: 'Whiskr',
     position: 'Web Developer',
-    image: 'https://conversionxl.com/wp-content/uploads/2012/11/cm.jpg',
-    description: 'A grueling challenge that is developed over three weeks of crying and fights',
-    date: 'December, 2017',
-    tags: ['Longterm Project', 'Agile Development'],
+    image: '/images/Whiskr.jpeg',
+    description: 'Whiskr is a Tinder-like progressive web app for pairing users with local adoptable pets. Whiskr will streamline your pursuit of a cuddly companion by implementing a tinder-like swiping mechanism to pair you with local pets.',
+    date: 'November 2017 - December 2017',
+    tags: ['React', 'Node.js', 'Express.js', 'Sequelize', 'Create-React-App', 'React-Swipe-Card', 'Heroku'],
   },
 ];
 
@@ -67,7 +66,6 @@ class AllProjects extends Component {
   }
 
   afterOpenModal() {
-    // references are now sync'd and can be accessed.
     this.subtitle.style.color = '#f00';
   }
 
@@ -84,14 +82,8 @@ class AllProjects extends Component {
           {
           this.state.projects.map(project => (
             <Col xs={12} md={4} className=" item" key={project.id}>
-              <Link
-                to={`/projects/${project.id}`}
-                href={`/projects/${project.id}`}
-              >
-                <Thumbnail src={project.image} />
-                <h2>{project.name}</h2>
-                <p>{project.description}</p>
-              </Link>
+              <Thumbnail src={project.image} />
+              <h2>{project.name}</h2>
               <div>
                 <button onClick={this.openModal}>See More</button>
 
@@ -102,16 +94,13 @@ class AllProjects extends Component {
                   style={customStyles}
                   contentLabel={project.name}
                 >
-
-                  <h2 ref={subtitle => this.subtitle = subtitle}>{project.name}</h2>
                   <button onClick={this.closeModal}>close</button>
-                  <div>{project.description}</div>
-                  <div>{project.date}</div>
-
-                  <form>
-                    <input />
-                    <button>tab navigation</button>
-                  </form>
+                  <h2 ref={subtitle => this.subtitle = subtitle}>{project.name}</h2>
+                  <div>
+                    <div>{project.date}</div>{project.description}
+                  </div>
+                  <div>{project.tags.join(', ')}
+                  </div>
                 </Modal>
               </div>
             </Col>
