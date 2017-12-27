@@ -1,35 +1,39 @@
 .jumbotron {
-        background:  url("/images/mainHero.jpg") no-repeat center;
-        background-size: cover;
-        display: block;
-        height: 100vh;
-        width: 100vw;
-        padding: 10vw;
-        margin: 0;
-        .text {
-            position: relative;
-            border-radius: 10px;
-            margin-top: 30vh;
+    background: url("/images/mainHero.jpg") no-repeat center;
+    background-size: cover;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    padding: 10vw;
+    margin: 0;
+    .text {
+        position: relative;
+        border-radius: 10px;
+        margin-top: 3vh;
+        text-align: left;
+        min-height: 100px;
+        color: white;
+        font-family: "Rokkitt";
+        font-size: calc(20px + 3vw);
+        h1 {
             text-align: left;
-            min-height: 100px;
-            color: white;
-            font-family: "Rokkitt";
-                font-size: calc(20px + 3vw);
-        }
-        .button {
-            margin-top: 2vw;
-            color: $primary-light-color;
-            border: solid 3px $secondary-medium-color;
-            background: $secondary-medium-color;
-            transition: all .5s ease;
-            &:hover {
-                background: $primary-light-color;
-                border-color: $secondary-dark-color;
-                ;
-                color: $secondary-dark-color;
-            }
-            &:active {
-                background: $secondary-light-color;
-            }
+            margin: 0;
+            padding: 0;
         }
     }
+    .button {
+        margin-top: 2vw;
+        color: white;
+        border: solid 2px $secondary-light-color;
+        background: transparent;
+        transition: all .5s ease;
+        &:hover {
+            background: $primary-medium-color;
+            border-color: $secondary-dark-color;
+            color: $secondary-dark-color;
+        }
+        &:active {
+            background: $secondary-light-color;
+        }
+    }
+}

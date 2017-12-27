@@ -26,12 +26,13 @@ export default class Home extends React.Component {
   render() {
     return (
       <Jumbotron>
-        <div className="text">
+        <div className="text animate fadeInLeftBig one">
+          <h1>HELLO</h1>
         Shelby Rackley is <br />
           <span id="typed" ref={(el) => { this.el = el; }} />
         </div>
-        <Button bsStyle="success" bsSize="large" className="shadow1 button" href="/about">
-          About Shelby
+        <Button bsStyle="success" bsSize="large" className="shadow1 button animate fadeInUp two" href="/about">
+          About
         </Button>
       </Jumbotron>
     );

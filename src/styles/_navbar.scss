@@ -14,12 +14,34 @@ nav {
         position: relative;
         left: -20px;
         width: 100%;
-        #logo {
-            font-family: $script-font-family;
-            font-size: calc(12px + 1.5vw);
-            padding: 1vw;
+        @media screen and (min-width: 600px) {
+            #logo {
+                display: inline-block;
+                font-family: $script-font-family;
+                font-size: calc(12px + 1.5vw);
+                padding: 1vw;
+                transition: all .5s ease;
+                &:hover {
+                    transform: scale(1.2);
                 }
-        .right > a {
+            }
+            a,
+            button {
+                font-size: calc(10px + 1.5vw);
+                padding: 1.2vw;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            #logo {
+                display: none;
+            }
+            a,
+            button {
+                font-size: 20px;
+                padding: 7px;
+            }
+        }
+        .right>a {
             position: relative;
             text-decoration: none;
             &:before {
@@ -29,7 +51,7 @@ nav {
                 height: 2px;
                 bottom: 0;
                 left: 0;
-                background-color:       $secondary-light-color;
+                background-color: $secondary-light-color;
                 visibility: hidden;
                 -webkit-transform: scaleX(0);
                 transform: scaleX(0);
@@ -42,22 +64,21 @@ nav {
                 transform: scaleX(1);
             }
         }
-
-        a, button {
+        a,
+        button {
             position: relative;
             text-decoration: none;
             transition: all .3s ease;
             border: none;
             background-color: transparent;
-            font-size: calc(10px + 1.5vw);
             color: $secondary-light-color;
-            padding: 1.2vw;
-        &:hover, &.active, &:visited {
-            color: $secondary-light-color;
-            text-decoration: none;
+            &:hover,
+            &.active,
+            &:visited {
+                color: $secondary-light-color;
+                text-decoration: none;
+            }
         }
-        }
-
         #social {
             position: absolute;
             top: calc(20px + 5vw);
@@ -68,15 +89,18 @@ nav {
             &.show {
                 transform: translateX(calc(-220px + -3vw));
             }
-
             button {
                 padding: 6px;
                 &:hover {
                     transform: scale(1.5);
                 }
                 span {
-                    font-size:calc(30px + 1vw);
-                    color: $secondary-medium-color;
+                    font-size: calc(30px + 1vw);
+                    color: $secondary-light-color;
+                    transition: all 1s ease;
+                    &:hover {
+                        color: $secondary-medium-color;
+                    }
                 }
             }
         }
