@@ -77,7 +77,7 @@ class AllProjects extends Component {
   render() {
     return (
       <Grid className="section">
-        <Header title="Projects" />
+        <Header title="Work" />
         <Row className="row">
           {
           this.state.projects.map(project => (

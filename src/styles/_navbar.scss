@@ -1,60 +1,74 @@
 nav {
-    padding-top: .8em;
-    padding-bottom: .3em;
-    width: 100%;
-    background-color: rgbv(0, 0, 0, 0);
+    padding: .2em;
     position: fixed;
-    top: 0;
-    right: 0;
+    width: 100%;
     z-index: 999;
     transition: all .5s ease-in-out;
     &.solid {
         background-color: $primary-medium-color;
     }
     ul {
-        a, button {
-            border: none;
-            background-color: transparent;
-            text-decoration: none;
-            font-size: calc(.7em + 1vw);
+        position: absolute;
+        left: -20px;
+        width: 100%;
+        .right > a {
+            position: relative;
             color: $secondary-dark-color;
-            padding: .3em;
-            margin: .5vw;
-            transition: all .2s ease;
-            &:hover {
-                text-decoration: none;
-                border-bottom: solid 3px $primary-dark-color;
-            };
-            &:focus {
-                outline: none;
+            text-decoration: none;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color:           $secondary-dark-color;
+                visibility: hidden;
+                -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+                -webkit-transition: all 0.3s ease-in-out 0s;
+                transition: all 0.3s ease-in-out 0s;
             }
-            &.active {
-                text-decoration: none;
-                color: $primary-dark-color;
-            }
-        }
-        #social {
-            position: absolute;
-            top: .8em;
-            right: -220px;
-            transition: all .7s ease-in-out;
-            &.show {
-                transform: translateX(-250px);
+            &:hover:before {
+                visibility: visible;
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
             }
         }
 
-        @media screen and (max-width: 560px) {
-            #social {
-                top: calc(.8em + 40px);
-                button {
-                    display: block;
-                }
-            }
+        a, button {
+            position: relative;
+            text-decoration: none;
+            transition: all .3s ease;
+            border: none;
+            background-color: transparent;
+            font-size: calc(8px + 1.5vw);
+            color: $secondary-dark-color;
+            padding: calc(.1em + 1.5vw);
+        &:hover, &:active, &:visited {
+            color: $secondary-dark-color;
+            text-decoration: none;
         }
-        @media screen and (min-width: 560px){
-            #social {
-                button {
-                    display: inline-block;
+        }
+
+        #social {
+            position: absolute;
+            top: calc(20px + 4vw);
+            width: calc(12px + 1vw + .2em);
+            right: -200px;
+            transition: all .7s ease-in-out;
+            display: block;
+            &.show {
+                transform: translateX(-230px);
+            }
+
+            button {
+                padding: 6px;
+                &:hover {
+                    transform: scale(1.5);
+                }
+                span {
+                    font-size:calc(30px + 1vw);
                 }
             }
         }

@@ -37,14 +37,16 @@ class Navbar extends Component {
     const classSolid = this.state.isSolid ? 'solid' : '';
 
     return (
-      <nav className={`topbar ${classSolid}`}>
+      <nav className={`${classSolid}`}>
         <ul>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/services">Services</NavLink>
-          <NavLink to="/projects">Projects</NavLink>
-          <button onClick={this.toggleSocial}> Contact
-          </button>
+          <NavLink to="/" className="left">Shelby Rackley</NavLink>
+          <span className="right">
+            <NavLink to="/about" >About</NavLink>
+            <NavLink to="/services" >Skills</NavLink>
+            <NavLink to="/projects" >Work</NavLink>
+            <button onClick={this.toggleSocial}>Contact
+            </button>
+          </span>
           <span id="social">
             <button><FontAwesome name="linkedin" /></button>
             <button><FontAwesome name="github" /></button>

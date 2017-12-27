@@ -1,40 +1,34 @@
-$font-family-main: "Josefin Slab",
+$font-family-main: "Monotype",
 sans-serif;
-$script-font-family: "Fredericka the Great";
-$primary-dark-color:#373A46;
-$primary-medium-color: rgb(208, 208, 208);
-$primary-light-color: #f9f9f9;
-$secondary-light-color: #E6F4E9;
-$secondary-medium-color: #59A99A;
-$secondary-dark-color: rgb(71, 138, 124);
-$accent-color: #EAAEC0;
+$script-font-family: "Monotype";
+$primary-dark-color:black;
+$primary-medium-color: grey;
+$primary-light-color: white;
+$secondary-light-color: lightpink;
+$secondary-medium-color: pink;
+$secondary-dark-color: hotpink;
+$accent-color: red;
+
 * {
     box-sizing: border-box;
+    &:focus {
+        outline: 0;
+    }
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: $font-family-main;
-    font-size: 2em;
-    line-height: 1.5;
     color: #333;
     width: 100%;
     height: 100%;
     h1 {
-        font-family: $script-font-family; // font-weight: bold;
+        font-family: $script-font-family;
         font-size: calc(2em + 3vw);
-        line-height: 1.2;
         margin-top: 1em;
         margin-bottom: 0.6em;
         text-align: center;
-    }
-    h2 {
-        font-size: 2em;
-        line-height: 1;
-        margin-bottom: 0.5em;
-        margin-top: 0.5em;
-        font-weight: 900;
     }
     img {
         max-width: 100%;
@@ -93,9 +87,6 @@ body {
                 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
                 transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
             }
-            &:focus {
-                outline: 0;
-            }
         }
     }
     .shadow2 {
@@ -113,6 +104,13 @@ body {
     .otto {
         color: white;
         text-shadow: 0 1px 0 #ccc, 0 2px 0 hsl(0, 0%, 79%), 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+    }
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right;
     }
 }
 

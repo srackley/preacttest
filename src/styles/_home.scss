@@ -1,5 +1,4 @@
-
-    .jumbotron {
+.jumbotron {
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(https://static.pexels.com/photos/597331/pexels-photo-597331.jpeg) no-repeat;
         background-size: cover;
         display: block;
@@ -9,17 +8,17 @@
         .text {
             position: relative;
             border-radius: 10px;
-            max-width: 300px;
-            margin-top: 8vh;
+            margin-top: 30vh;
             text-align: center;
             color: $primary-light-color;
-            h1 {
-                margin-bottom: 2vw;
+            h2 {
+                font-weight: 700;
+                font-size: calc(18px + 3vw);
             }
             .button {
                 margin-top: 2vw;
                 color: $primary-light-color;
-                border: solid 5px $secondary-medium-color;
+                border: solid 3px $secondary-medium-color;
                 background: $secondary-medium-color;
                 transition: all .5s ease;
                 &:hover {
@@ -30,9 +29,6 @@
                 }
                 &:active {
                     background: $secondary-light-color;
-                }
-                &:focus {
-                    outline: 0;
                 }
             }
         }

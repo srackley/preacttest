@@ -5,7 +5,7 @@ import Header from './Header';
 
 const Services = () => (
   <Grid id="servicesSection" className="section">
-    <Header title="Services" />
+    <Header title="Skills" />
     <Row>
       <Col xs={12} md={4} className="item">
         <FontAwesome name="html5" className="otto" />
