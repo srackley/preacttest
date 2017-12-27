@@ -1,19 +1,26 @@
 nav {
-    padding: .2em;
+    padding-top: .2em;
+    padding-bottom: 0;
     position: fixed;
+    top: 0;
+    right: 0;
     width: 100%;
     z-index: 999;
     transition: all .5s ease-in-out;
     &.solid {
-        background-color: $primary-medium-color;
+        background-color: $primary-dark-color;
     }
     ul {
-        position: absolute;
+        position: relative;
         left: -20px;
         width: 100%;
+        #logo {
+            font-family: $script-font-family;
+            font-size: calc(12px + 1.5vw);
+            padding: 1vw;
+                }
         .right > a {
             position: relative;
-            color: $secondary-dark-color;
             text-decoration: none;
             &:before {
                 content: '';
@@ -22,7 +29,7 @@ nav {
                 height: 2px;
                 bottom: 0;
                 left: 0;
-                background-color:           $secondary-dark-color;
+                background-color:       $secondary-light-color;
                 visibility: hidden;
                 -webkit-transform: scaleX(0);
                 transform: scaleX(0);
@@ -42,24 +49,24 @@ nav {
             transition: all .3s ease;
             border: none;
             background-color: transparent;
-            font-size: calc(8px + 1.5vw);
-            color: $secondary-dark-color;
-            padding: calc(.1em + 1.5vw);
-        &:hover, &:active, &:visited {
-            color: $secondary-dark-color;
+            font-size: calc(10px + 1.5vw);
+            color: $secondary-light-color;
+            padding: 1.2vw;
+        &:hover, &.active, &:visited {
+            color: $secondary-light-color;
             text-decoration: none;
         }
         }
 
         #social {
             position: absolute;
-            top: calc(20px + 4vw);
+            top: calc(20px + 5vw);
             width: calc(12px + 1vw + .2em);
             right: -200px;
             transition: all .7s ease-in-out;
             display: block;
             &.show {
-                transform: translateX(-230px);
+                transform: translateX(calc(-220px + -3vw));
             }
 
             button {
@@ -69,6 +76,7 @@ nav {
                 }
                 span {
                     font-size:calc(30px + 1vw);
+                    color: $secondary-medium-color;
                 }
             }
         }

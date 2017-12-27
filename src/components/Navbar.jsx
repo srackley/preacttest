@@ -20,11 +20,9 @@ class Navbar extends Component {
 
   handleScroll() {
     const { isSolid } = this.state;
-    (window.scrollY > this.prev)
+    (window.scrollY > 20)
       ? !isSolid && this.setState({ isSolid: true })
       : isSolid && this.setState({ isSolid: false });
-
-    this.prev = window.scrollY;
   }
 
 
@@ -39,7 +37,7 @@ class Navbar extends Component {
     return (
       <nav className={`${classSolid}`}>
         <ul>
-          <NavLink to="/" className="left">
+          <NavLink to="/" id="logo" className="left">
           Shelby Rackley
           </NavLink>
           <span className="right">
