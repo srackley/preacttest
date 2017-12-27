@@ -1,48 +1,38 @@
 import React from 'react';
 import { Jumbotron, Button } from 'react-bootstrap';
-
-const nouns = [
-  'a creator', 'a designer', 'a communicator', 'helpful', 'a leader', 'a teacher', 'a learner', 'a maker', 'creative', 'dedicated', 'intelligent', 'passionate', 'an explorer', 'enthusiastic', 'an artist', 'a Developer', 'versatile', 'resourceful', 'clever', 'efficient', 'productive', 'skillful', 'an innovator', 'confident',
-];
-
-
-function getRandomIndex() {
-  return Math.floor(Math.random() * nouns.length);
-}
+import Typed from 'typed.js';
 
 export default class Home extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      noun: 'a Software Engineer',
-    };
-  }
-
   componentDidMount() {
-    this.setNoun =
-    setInterval(() => this.shuffleNoun(), 1000);
+    const strings = [
+      'a creator.', 'a designer.', 'a communicator.', 'helpful.', 'a leader.', 'a teacher.', 'a maker.', 'creative.', 'dedicated.', 'intelligent.', 'passionate.', 'an explorer.', 'enthusiastic.', 'an artist.', 'a developer.', 'versatile.', 'resourceful.', 'clever.', 'efficient.', 'productive.', 'skillful.', 'an innovator.', 'confident.', "curious.", "humble.", "a fast learner.", "focused.", "logical.", "persistent.", "honest.", "disciplined."
+    ];
+    const options = {
+      strings,
+      typeSpeed: 70,
+      backSpeed: 40,
+      loop: true,
+      shuffle: true,
+      startDelay: 500,
+    };
+
+    this.typed = new Typed(this.el, options);
   }
 
   componentWillUnmount() {
-    clearInterval(this.setNoun);
-  }
-
-  shuffleNoun() {
-    this.setState({
-      noun: nouns[getRandomIndex()],
-    });
+    this.typed.destroy();
   }
 
   render() {
     return (
       <Jumbotron>
         <div className="text">
-          <h2>
-            Shelby Rackley is <br />{this.state.noun}.
-          </h2>
-          <p><Button bsStyle="success" bsSize="large" className="shadow1 button" href="/about">Learn more</Button></p>
+        Shelby Rackley is <br/>
+          <span id="typed" ref={(el) => { this.el = el; }} />
         </div>
+        <Button bsStyle="success" bsSize="large" className="shadow1 button" href="/about">
+          About Shelby
+        </Button>
       </Jumbotron>
     );
   }

@@ -4,32 +4,31 @@
         display: block;
         height: 100vh;
         width: 100vw;
-        padding: 40px;
+        padding: 10vw;
         .text {
             position: relative;
             border-radius: 10px;
             margin-top: 30vh;
-            text-align: center;
+            text-align: left;
+            min-height: 100px;
             color: $primary-light-color;
-            h2 {
-                font-weight: 700;
-                font-size: calc(18px + 3vw);
+            font-family: "Rokkitt";
+                font-size: calc(20px + 3vw);
+        }
+        .button {
+            margin-top: 2vw;
+            color: $primary-light-color;
+            border: solid 3px $secondary-medium-color;
+            background: $secondary-medium-color;
+            transition: all .5s ease;
+            &:hover {
+                background: $primary-light-color;
+                border-color: $secondary-dark-color;
+                ;
+                color: $secondary-dark-color;
             }
-            .button {
-                margin-top: 2vw;
-                color: $primary-light-color;
-                border: solid 3px $secondary-medium-color;
-                background: $secondary-medium-color;
-                transition: all .5s ease;
-                &:hover {
-                    background: $primary-light-color;
-                    border-color: $secondary-dark-color;
-                    ;
-                    color: $secondary-dark-color;
-                }
-                &:active {
-                    background: $secondary-light-color;
-                }
+            &:active {
+                background: $secondary-light-color;
             }
         }
     }

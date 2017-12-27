@@ -19,6 +19,7 @@
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.14",
+    "typed.js": "^2.0.6",
     "webpack": "^3.8.1"
   },
   "scripts": {

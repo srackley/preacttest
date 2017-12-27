@@ -39,18 +39,39 @@ class Navbar extends Component {
     return (
       <nav className={`${classSolid}`}>
         <ul>
-          <NavLink to="/" className="left">Shelby Rackley</NavLink>
+          <NavLink to="/" className="left">
+          Shelby Rackley
+          </NavLink>
           <span className="right">
-            <NavLink to="/about" >About</NavLink>
-            <NavLink to="/services" >Skills</NavLink>
-            <NavLink to="/projects" >Work</NavLink>
-            <button onClick={this.toggleSocial}>Contact
+            <NavLink to="/about" >
+            About
+            </NavLink>
+            <NavLink to="/services" >
+            Skills
+            </NavLink>
+            <NavLink to="/projects" >
+            Work
+            </NavLink>
+            <button onClick={this.toggleSocial}>
+            Contact
             </button>
           </span>
           <span id="social">
-            <button><FontAwesome name="linkedin" /></button>
-            <button><FontAwesome name="github" /></button>
-            <button><FontAwesome name="envelope" /></button>
+            <a href="http://www.linkedin.com/in/shelbyrackley">
+              <button>
+                <FontAwesome name="linkedin" />
+              </button>
+            </a>
+            <a href="http://www.github.com/srackley">
+              <button>
+                <FontAwesome name="github" />
+              </button>
+            </a>
+            <a href="mailto:shelbytrackley@gmail.com">
+              <button>
+                <FontAwesome name="envelope" />
+              </button>
+            </a>
           </span>
         </ul>
       </nav>
