@@ -21,19 +21,4 @@
             padding: 0;
         }
     }
-    .button {
-        margin-top: 2vw;
-        color: white;
-        border: solid 2px $secondary-light-color;
-        background: transparent;
-        transition: all .5s ease;
-        &:hover {
-            background: $primary-medium-color;
-            border-color: $secondary-dark-color;
-            color: $secondary-dark-color;
-        }
-        &:active {
-            background: $secondary-light-color;
-        }
-    }
 }

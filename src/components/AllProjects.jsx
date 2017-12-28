@@ -26,90 +26,36 @@ const data = [
     id: 3,
     name: 'Whiskr',
     position: 'Web Developer',
-    image: '/images/Whiskr.jpeg',
+    image: '/images/Whiskr.png',
     description: 'Whiskr is a Tinder-like progressive web app for pairing users with local adoptable pets. Whiskr will streamline your pursuit of a cuddly companion by implementing a tinder-like swiping mechanism to pair you with local pets.',
     date: 'November 2017 - December 2017',
     tags: ['React', 'Node.js', 'Express.js', 'Sequelize', 'Create-React-App', 'React-Swipe-Card', 'Heroku'],
   },
 ];
 
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-  },
-};
-
-class AllProjects extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      projects: [],
-      modalIsOpen: false,
-    };
-    this.openModal = this.openModal.bind(this);
-    this.afterOpenModal = this.afterOpenModal.bind(this);
-    this.closeModal = this.closeModal.bind(this);
-  }
-
-  componentWillMount() {
-    this.setState({ projects: data });
-  }
-
-  openModal() {
-    this.setState({ modalIsOpen: true });
-  }
-
-  afterOpenModal() {
-    this.subtitle.style.color = '#f00';
-  }
-
-  closeModal() {
-    this.setState({ modalIsOpen: false });
-  }
-
-
-  render() {
-    return (
-      <Grid className="section">
-        <Header title="Work" />
-        <Row className="row">
-          {
-          this.state.projects.map(project => (
+const AllProjects = () => (
+  <Grid className="section">
+    <Header title="Work" />
+    <Row className="row">
+      {
+          data.map(project => (
             <Col xs={12} md={4} className=" item" key={project.id}>
-              <Thumbnail src={project.image} />
+              <img src={project.image} alt="Device display of {project.name}" />
               <h2>{project.name}</h2>
               <div>
-                <button onClick={this.openModal}>See More</button>
-
-                <Modal
-                  isOpen={this.state.modalIsOpen}
-                  onAfterOpen={this.afterOpenModal}
-                  onRequestClose={this.closeModal}
-                  style={customStyles}
-                  contentLabel={project.name}
-                >
-                  <button onClick={this.closeModal}>close</button>
-                  <h2 ref={subtitle => this.subtitle = subtitle}>{project.name}</h2>
-                  <div>
-                    <div>{project.date}</div>{project.description}
-                  </div>
-                  <div>{project.tags.join(', ')}
-                  </div>
-                </Modal>
+                <button >Demo</button>
+                <button >Code</button>
+                <div>
+                  <div>{project.date}</div>{project.description}
+                </div>
+                <div>{project.tags.join(', ')}
+                </div>
               </div>
             </Col>
           ))
         }
-        </Row>
-      </Grid>
-    );
-  }
-}
+    </Row>
+  </Grid>
+);
 
 export default AllProjects;

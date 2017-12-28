@@ -31,7 +31,7 @@ export default class Home extends React.Component {
         Shelby Rackley is <br />
           <span id="typed" ref={(el) => { this.el = el; }} />
         </div>
-        <Button bsStyle="success" bsSize="large" className="shadow1 button animate fadeInUp two" href="/about">
+        <Button bsStyle="success" bsSize="large" className="shadow1 outline-button animate fadeInUp two" href="/about">
           About
         </Button>
       </Jumbotron>
