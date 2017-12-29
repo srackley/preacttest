@@ -32,6 +32,16 @@ export default class Home extends React.Component {
           <a href="/about">
           <button id="heroButton" className="shadow1 outline-button animate fadeInUp three">About</button>
           </a>
+          <div>
+          <a
+      href="/resume.pdf"
+      download
+      id="resumeLink"
+      className="animate fadeIn eight"
+    >
+    <h3>I am currently seeking full-time opportunities!</h3>
+    </a>
+    </div>
         </div>
 
       </div>

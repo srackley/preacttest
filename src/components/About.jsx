@@ -20,18 +20,13 @@ const About = () => (
       set of resources for turning a muddle of
       problems into a streamlined and creative solution.
         </p>
-        <a
-        href="/resume.pdf" download id="resumeLink" className="animate fadeIn eight">
-        I am currently seeking full-time opportunities!
-        </a>
       </div>
       <img
         src="/images/Headshot.png"
         alt="Shelby Rackley's Face"
-        className="animate fadeInLeft eight"
+        className="animate fadeInLeft three"
       />
     </div>
-
   </div>
 );
 

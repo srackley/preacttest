@@ -25,6 +25,13 @@
     }
     #heroButton {
         margin-top: 2vw;
-        font-size: calc(18px + 1vw);   padding: 8px;
+        font-size: calc(18px + 1vw);
+        padding: 8px;
+    }
+    #resumeLink {
+        color: $primary-light-color;
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
