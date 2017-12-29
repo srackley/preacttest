@@ -38,7 +38,7 @@ const AllProjects = () => (
     <Row className="row">
       {
           data.map(project => (
-            <Col xs={12} md={4} className=" item" key={project.id}>
+            <Col xs={12} md={4} className="animate fadeInUp two item" key={project.id}>
               <img src={project.image} alt="Device display of {project.name}" />
               <h2>{project.name}</h2>
               <div>
