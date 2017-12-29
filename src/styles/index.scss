@@ -16,13 +16,18 @@ $accent-color: #99173C;
 }
 
 body {
+    background-color: $primary-dark-color;
     margin: 0;
     padding: 0;
     font-family: $font-family-main;
-    color: #333;
+    color: $primary-light-color;
     width: 100%;
     height: 100%;
+
+    .neon { color: #fff; text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $secondary-light-color, 0 0 30px $secondary-light-color, 0 0 40px $secondary-light-color, 0 0 50px $secondary-light-color, 0 0 75px $secondary-light-color; letter-spacing: 5px; }
+
     h1 {
+        color: $secondary-light-color;
         font-family: $script-font-family;
         font-size: calc(40px + 3vw);
         margin-top: 100px;
@@ -69,8 +74,23 @@ body {
             h2,
             p {
                 text-decoration: none;
-                color: $primary-dark-color;
+                color: $secondary-light-color;
                 padding: 5px;
+            }
+        }
+        .outline-button {
+            margin-top: 2vw;
+            color: white;
+            border: solid 2px $secondary-light-color;
+            background: transparent;
+            transition: all .5s ease;
+            &:hover {
+                background: $primary-medium-color;
+                border-color: $secondary-dark-color;
+                color: $secondary-dark-color;
+            }
+            &:active {
+                background: $secondary-light-color;
             }
         }
         p {

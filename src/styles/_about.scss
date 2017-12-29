@@ -1,8 +1,35 @@
-#aboutSection {
-
-    .oneAbout {
-      text-align: center;
-      margin-bottom: 30px;
-      padding: 20px;
+  #headshotContainer {
+    z-index: -1;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 80vh;
+    background-color: $secondary-light-color;
+    .bar {
+      height: 6px;
+      background-color: black;
     }
-}
+    .thin {
+      margin-top: 3px;
+    }
+    .med {
+      margin-top: 4px;
+    }
+    .thick {
+      margin-top: 5px;
+    }
+    .super {
+      margin-top: 6px;
+    }
+  }
+  img {
+    position: absolute;
+    bottom: 0;
+    height: 300px;
+    width: auto;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: $secondary-light-color;
+  }
