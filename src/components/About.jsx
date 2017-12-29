@@ -21,7 +21,7 @@ const About = () => (
 
     </div>
     <div>
-      Description of my life and stuff and things
+      Description of my life and stuff.
     </div>
     <div>
     Education and stuff. Certifications of courses and things.
