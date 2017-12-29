@@ -58,17 +58,17 @@ class Navbar extends Component {
             </button>
           </span>
           <span id="social">
-            <a href="http://www.linkedin.com/in/shelbyrackley">
+            <a href="http://www.linkedin.com/in/shelbyrackley" rel="noopener noreferrer" target="_blank" >
               <button>
                 <FontAwesome name="linkedin" />
               </button>
             </a>
-            <a href="http://www.github.com/srackley">
+            <a href="http://www.github.com/srackley" rel="noopener noreferrer" target="_blank" >
               <button>
                 <FontAwesome name="github" />
               </button>
             </a>
-            <a href="mailto:shelbytrackley@gmail.com">
+            <a href="mailto:shelbytrackley@gmail.com" >
               <button>
                 <FontAwesome name="envelope" />
               </button>
