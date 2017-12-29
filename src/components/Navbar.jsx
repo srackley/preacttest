@@ -37,11 +37,11 @@ class Navbar extends Component {
     return (
       <nav className={`${classSolid}`}>
         <ul>
-          <NavLink to="/portfolio" id="logo" className="left animate fadeInDown one">
+          <NavLink exact to="/" id="logo" className="left animate fadeInDown one">
           Shelby Rackley
           </NavLink>
           <span className="right animate fadeInDown one">
-            <NavLink to="/portfolio" >
+            <NavLink exact to="/" >
             Home
             </NavLink>
             <NavLink to="/about" >
