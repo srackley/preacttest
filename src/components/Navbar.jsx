@@ -70,7 +70,7 @@ class Navbar extends Component {
             </a>
             <a href="mailto:shelbytrackley@gmail.com" >
               <button>
-                <FontAwesome name="envelope" />
+                <FontAwesome name="envelope-o" />
               </button>
             </a>
           </span>

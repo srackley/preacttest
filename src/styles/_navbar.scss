@@ -105,7 +105,9 @@ nav {
                     transition: all 1s ease;
                     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
                     &:hover {
-                        color: $secondary-medium-color;
+                        color: #fff;
+                        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $secondary-light-color, 0 0 30px $secondary-light-color, 0 0 40px $secondary-light-color, 0 0 50px $secondary-light-color, 0 0 75px $secondary-light-color;
+                        letter-spacing: 5px;
                     }
                 }
             }
