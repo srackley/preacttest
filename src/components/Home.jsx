@@ -1,5 +1,4 @@
 import React from 'react';
-import { Jumbotron, Button } from 'react-bootstrap';
 import Typed from 'typed.js';
 
 export default class Home extends React.Component {
@@ -25,15 +24,17 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <Jumbotron>
-        <div className="text animate fadeInLeftBig one">
+      <div className="jumbotron">
+        <div className="text animate fadeIn one">
           <h1>HELLO!</h1>
-          <h2>I'm Shelby Rackley. I am a full-stack web developer. I am also <span id="typed" ref={(el) => { this.el = el; }} />
+          <h2>My name is Shelby Rackley. <br/> I am a Full Stack Web Developer. <br/> I am also <span id="typed" ref={(el) => { this.el = el; }} />
           </h2>
-
+          <a href="/about">
+          <button id="heroButton" className="shadow1 outline-button animate fadeInUp three">About</button>
+          </a>
         </div>
-        <button id="heroButton" className="shadow1 outline-button animate fadeInUp two">About</button>
-      </Jumbotron>
+
+      </div>
     );
   }
 }

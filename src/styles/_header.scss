@@ -1,9 +1,8 @@
 .header {
-  height: 200px;
+  text-align: center;
+
 h1 {
-  position: absolute;
-  top: 70px;
-  left: 10vw;
+  margin-top: 50px;
 }
 
   #bars {
@@ -20,19 +19,19 @@ h1 {
 }
 
 .thin {
-  margin-top: .5px;
+  margin-top: 3px;
 }
 
 .med {
-  margin-top: 1px;
+  margin-top: 5px;
 }
 
 .thick {
-  margin-top: 2px;
+  margin-top: 7px;
 }
 
 .super {
-  margin-top: 3.5px;
+  margin-top: 9px;
 }
 
 .dark {

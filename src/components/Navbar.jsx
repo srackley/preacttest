@@ -37,24 +37,24 @@ class Navbar extends Component {
     return (
       <nav className={`${classSolid}`}>
         <ul>
-          <NavLink to="/" id="logo" className="left animate fadeInDown one">
+          <NavLink to="/portfolio" id="logo" className="left animate fadeInDown one">
           Shelby Rackley
           </NavLink>
           <span className="right animate fadeInDown one">
-            <NavLink to="/" >
+            <NavLink to="/portfolio" >
             Home
             </NavLink>
             <NavLink to="/about" >
             About
             </NavLink>
-            <NavLink to="/services" >
+            <NavLink to="/skills" >
             Skills
             </NavLink>
-            <NavLink to="/projects" >
+            <NavLink to="/work" >
             Work
             </NavLink>
             <button onClick={this.toggleSocial}>
-            Contact
+              Contact
             </button>
           </span>
           <span id="social">

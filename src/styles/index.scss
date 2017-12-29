@@ -1,5 +1,5 @@
-$font-family-main: "Oswald", sans-serif;
-$script-font-family: "Permanent Marker";
+$font-family-main: "Lato", sans-serif;
+$script-font-family: "Knewave";
 $primary-dark-color: #0b0c10;
 $primary-medium-color: #0E131C;
 $primary-light-color: #c5c6c7;
@@ -74,7 +74,6 @@ body {
             h2,
             p {
                 text-decoration: none;
-                color: $secondary-light-color;
                 padding: 5px;
             }
         }
@@ -93,9 +92,6 @@ body {
                 background: $secondary-light-color;
             }
         }
-        p {
-            font-style: italic;
-        }
     }
     .left {
         float: left;
@@ -112,3 +108,4 @@ body {
 @import '_animations';
 @import '_shadows';
 @import '_header';
+@import '_services';

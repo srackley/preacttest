@@ -5,8 +5,24 @@
     .item {
       transition: all .5s ease;
 
+      #tags {
+        color: $secondary-medium-color;
+
+      }
+
+      h2 {
+        font-family: $script-font-family;
+        color: $secondary-light-color;
+      }
+
       a {
         text-decoration: none;
+      }
+
+      img {
+        min-height: 200px;
+        max-height: 350px;
+        width: auto;
       }
     }
   }

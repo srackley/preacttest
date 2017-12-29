@@ -32,7 +32,7 @@ const data = [
     demo: 'https://youtu.be/qW5-C7skuU0',
     code: 'https://github.com/Whiskr/whiskr',
     image: '/images/Whiskr.png',
-    description: 'Whiskr is a Tinder-like progressive web app for pairing users with local adoptable pets. Whiskr will streamline your pursuit of a cuddly companion by implementing a tinder-like swiping mechanism to pair you with local pets.',
+    description: 'Whiskr is a Tinder-like web app for pairing users with local adoptable pets. Whiskr will streamline your pursuit of a cuddly companion by implementing a swiping mechanism to pair you with local pets.',
     date: 'November 2017 - December 2017',
     tags: ['React', 'Node.js', 'Express.js', 'Sequelize', 'Create-React-App', 'React-Swipe-Card', 'Heroku'],
   },
@@ -45,8 +45,10 @@ const AllProjects = () => (
       {
           data.map(project => (
             <Col xs={12} md={4} className="animate fadeInUp two item" key={project.id}>
-              <img src={project.image} alt="Device display of {project.name}" />
+              <img src={project.image} alt={`Device display of ${project.name}`} />
               <h2>{project.name}</h2>
+              <div>{project.date}</div>
+              <br />
               <div>
                 <a href={project.demo}>
                   <button className="outline-button">Demo</button>
@@ -55,9 +57,11 @@ const AllProjects = () => (
                   <button className="outline-button">Code</button>
                 </a>
                 <div>
-                  <div>{project.date}</div>{project.description}
+                  <br />
+                  {project.description}
                 </div>
-                <div>{project.tags.join(', ')}
+                <br />
+                <div id="tags">{project.tags.join(' | ')}
                 </div>
               </div>
             </Col>

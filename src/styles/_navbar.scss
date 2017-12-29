@@ -9,15 +9,16 @@ nav {
     transition: all .5s ease-in-out;
     &.solid {
         background-color: $primary-dark-color;
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
     }
     ul {
         position: relative;
         left: -20px;
         width: 100%;
+        font-family: $script-font-family;
         @media screen and (min-width: 600px) {
             #logo {
                 display: inline-block;
-                font-family: $script-font-family;
                 font-size: calc(12px + 1.5vw);
                 padding: 1vw;
                 transition: all .5s ease;
@@ -51,7 +52,7 @@ nav {
                 height: 2px;
                 bottom: 0;
                 left: 0;
-                background-color: $secondary-light-color;
+                background-color: $secondary-medium-color;
                 visibility: hidden;
                 -webkit-transform: scaleX(0);
                 transform: scaleX(0);
@@ -73,10 +74,13 @@ nav {
             background-color: transparent;
             color: $secondary-light-color;
             &:hover,
-            &.active,
             &:visited {
                 color: $secondary-light-color;
                 text-decoration: none;
+            }
+
+            &.active {
+                color: #befffb;
             }
         }
         #social {
