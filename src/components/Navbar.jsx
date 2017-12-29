@@ -41,6 +41,9 @@ class Navbar extends Component {
           Shelby Rackley
           </NavLink>
           <span className="right animate fadeInDown one">
+            <NavLink to="/" >
+            Home
+            </NavLink>
             <NavLink to="/about" >
             About
             </NavLink>

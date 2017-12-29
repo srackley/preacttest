@@ -8,7 +8,7 @@
     margin: 0;
     .text {
         position: absolute;
-        bottom: 40vh;
+        top: 35vh;
         text-align: left;
         color: white;
         font-family: "Rokkitt";
@@ -24,7 +24,9 @@
         }
     }
     #heroButton {
+        margin-top: 2vw;
+        font-size: calc(18px + 1vw);   padding: 8px;
         position: absolute;
-        bottom: 30vh;
+        bottom: 25vh;
     }
 }

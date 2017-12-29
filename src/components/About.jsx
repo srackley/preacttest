@@ -6,14 +6,6 @@ const About = () => (
   <div className="section">
     <Header title="About" />
     <div id="headshotContainer">
-      <div className="bar animate fadeInLeft one thin" style={{ width: '92vw' }} />
-      <div className="bar animate fadeInLeft one thin" style={{ width: '80vw' }} />
-      <div className="bar animate fadeInLeft one med" style={{ width: '68vw' }} />
-      <div className="bar animate fadeInLeft one med" style={{ width: '56vw' }} />
-      <div className="bar animate fadeInLeft one thick" style={{ width: '44vw' }} />
-      <div className="bar animate fadeInLeft one thick" style={{ width: '32vw' }} />
-      <div className="bar animate fadeInLeft one super" style={{ width: '20vw' }} />
-      <div className="bar animate fadeInLeft one super" style={{ width: '8vw' }} />
       <img
         src="/images/Headshot.png"
         alt="Shelby Rackley's Face"

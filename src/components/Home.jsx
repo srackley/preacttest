@@ -32,15 +32,7 @@ export default class Home extends React.Component {
           </h2>
 
         </div>
-        <Button
-          bsStyle="success"
-          id="heroButton"
-          bsSize="large"
-          className="shadow1 outline-button animate fadeInUp two"
-          href="/about"
-        >
-          About
-        </Button>
+        <button id="heroButton" className="shadow1 outline-button animate fadeInUp two">About</button>
       </Jumbotron>
     );
   }
