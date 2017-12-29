@@ -3,7 +3,7 @@ import FontAwesome from 'react-fontawesome';
 import Header from './Header';
 
 const Services = () => (
-  <div id="servicesSection">
+  <div id="servicesSection" style={{ padding: '4vw' }}>
     <Header title="Skills" />
     <div className="row">
       <div className="item animate fadeIn three">

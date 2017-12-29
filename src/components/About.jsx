@@ -3,7 +3,7 @@ import Header from './Header';
 
 
 const About = () => (
-  <div className="section" style={{padding: '4vw'}}>
+  <div className="section">
     <Header title="About" />
     <div id="headshotContainer">
       <div id="aboutText" className="animate fadeIn three">
