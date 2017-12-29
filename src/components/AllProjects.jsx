@@ -1,5 +1,4 @@
 import React from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
 import Header from './Header';
 
 const data = [
@@ -39,12 +38,12 @@ const data = [
 ];
 
 const AllProjects = () => (
-  <Grid className="section">
+  <div className="section" style={{padding: '4vw'}}>
     <Header title="Work" />
-    <Row className="row">
+    <div className="row">
       {
           data.map(project => (
-            <Col xs={12} md={4} className="animate fadeInUp two item" key={project.id}>
+            <div className="animate fadeInUp two item" key={project.id}>
               <img src={project.image} alt={`Device display of ${project.name}`} />
               <h2>{project.name}</h2>
               <div>{project.date}</div>
@@ -64,11 +63,11 @@ const AllProjects = () => (
                 <div id="tags">{project.tags.join(' | ')}
                 </div>
               </div>
-            </Col>
+            </div>
           ))
         }
-    </Row>
-  </Grid>
+    </div>
+  </div>
 );
 
 export default AllProjects;

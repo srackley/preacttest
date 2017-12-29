@@ -2,6 +2,20 @@
     display: flex;
     flex-wrap: wrap;
 
+    @media screen and (max-width: 1000px){
+      .item {
+        max-width: 500px;
+        margin: auto;
+      }
+    }
+
+    @media screen and (min-width: 1000px) {
+      .item {
+        max-width: 30vw;
+        margin: auto;
+      }
+    }
+
     .item {
       transition: all .5s ease;
 

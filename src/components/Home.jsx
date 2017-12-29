@@ -27,23 +27,22 @@ export default class Home extends React.Component {
       <div className="jumbotron">
         <div className="text animate fadeIn one">
           <h1>HELLO!</h1>
-          <h2>My name is Shelby Rackley. <br/> I am a Full Stack Web Developer. <br/> I am also <span id="typed" ref={(el) => { this.el = el; }} />
+          <h2>My name is Shelby Rackley. <br /> I am a Full Stack Web Developer. <br /> I am also <span id="typed" ref={(el) => { this.el = el; }} />
           </h2>
           <a href="/about">
-          <button id="heroButton" className="shadow1 outline-button animate fadeInUp three">About</button>
+            <button id="heroButton" className="shadow1 outline-button animate fadeInUp three">About</button>
           </a>
           <div>
-          <a
-      href="/resume.pdf"
-      download
-      id="resumeLink"
-      className="animate fadeIn eight"
-    >
-    <h3>I am currently seeking full-time opportunities!</h3>
-    </a>
-    </div>
+            <a
+              href="/resume.pdf"
+              download
+              id="resumeLink"
+              className="animate fadeIn eight"
+            >
+              <h3>I am currently seeking full-time opportunities!</h3>
+            </a>
+          </div>
         </div>
-
       </div>
     );
   }

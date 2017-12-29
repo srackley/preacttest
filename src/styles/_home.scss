@@ -1,14 +1,14 @@
 .jumbotron {
     background: url("/images/mainHero.jpg") no-repeat center;
     background-size: cover;
-    display: block;
+    display: flex;
+    align-items: center;
     height: 100vh;
     width: 100vw;
     padding: 10vw;
     margin: 0;
     .text {
         position: relative;
-        top: 30vh;
         text-align: left;
         color: white;
         font-family: "Rokkitt";
@@ -22,16 +22,17 @@
         h2 {
             font-size: calc(18px + 3vw);
         }
+        #resumeLink {
+            color: $primary-light-color;
+            text-decoration: none;
+            &:hover, &:visited {
+                text-decoration: none;
+            }
+        }
     }
     #heroButton {
         margin-top: 2vw;
         font-size: calc(18px + 1vw);
         padding: 8px;
-    }
-    #resumeLink {
-        color: $primary-light-color;
-        &:hover {
-            text-decoration: none;
-        }
     }
 }

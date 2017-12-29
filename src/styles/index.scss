@@ -51,7 +51,9 @@ body {
             font-size: 12em;
         }
         .section {
-            padding: 4vw;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
             background-size: cover;
             width: 100vw;
             height: 100vh;
@@ -79,7 +81,9 @@ body {
         }
         .outline-button {
             margin: 5px;
+            font-size: calc(12px + 1vw);
             color: white;
+            padding: 10px;
             border: solid 2px $secondary-light-color;
             background: transparent;
             transition: all .5s ease;
