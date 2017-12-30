@@ -32,7 +32,7 @@ export default class Home extends React.Component {
           </a>
           <div>
             <a
-              href="/resume.pdf"
+              href="/ShelbyRackley.pdf"
               download
               id="resumeLink"
               className="animate fadeIn eight"
