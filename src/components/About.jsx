@@ -6,6 +6,11 @@ const About = () => (
   <div className="section">
     <Header title="About" />
     <div id="headshotContainer">
+      <img
+        src="/images/HeadshotOutline.png"
+        alt="Shelby Rackley's Face"
+        className="animate fadeInLeft three"
+      />
       <div id="aboutText" className="animate fadeIn three">
         <p>Coming from a background in fine art,
         I bring my eye for design,
@@ -23,11 +28,6 @@ const About = () => (
         problems into a streamlined and creative solution.
         </p>
       </div>
-      <img
-        src="/images/Headshot.png"
-        alt="Shelby Rackley's Face"
-        className="animate fadeInLeft three"
-      />
     </div>
   </div>
 );

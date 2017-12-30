@@ -4,14 +4,12 @@ import Typed from 'typed.js';
 export default class Home extends React.Component {
   componentDidMount() {
     const strings = [
-      'a creator.', 'a designer.', 'a communicator.', 'helpful.', 'a leader.', 'a teacher.', 'a maker.', 'creative.', 'dedicated.', 'intelligent.', 'passionate.', 'an explorer.', 'enthusiastic.', 'an artist.', 'versatile.', 'resourceful.', 'clever.', 'efficient.', 'productive.', 'skillful.', 'an innovator.', 'confident.', 'curious.', 'humble.', 'a fast learner.', 'focused.', 'logical.', 'persistent.', 'honest.', 'disciplined.',
+      'a creator.', 'passionate.', 'a designer.', 'efficient.', 'a communicator.', 'helpful.', 'a leader.', 'a teacher.', 'curious.', 'a maker.', 'creative.', 'dedicated.', 'intelligent.', 'an explorer.', 'enthusiastic.', 'an artist.', 'versatile.', 'resourceful.', 'clever.', 'productive.', 'skillful.', 'an innovator.', 'confident.', 'a fast learner.', 'focused.', 'logical.', 'persistent.', 'honest.', 'disciplined.', 'humble.',
     ];
     const options = {
       strings,
       typeSpeed: 70,
       backSpeed: 40,
-      loop: true,
-      shuffle: true,
       startDelay: 500,
     };
 
