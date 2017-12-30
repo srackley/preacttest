@@ -94,6 +94,7 @@ body {
                 color: $secondary-dark-color;
             }
             &:active {
+                color: $primary-dark-color;
                 background: $secondary-light-color;
             }
         }
