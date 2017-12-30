@@ -9,7 +9,7 @@ const About = () => (
       <img
         src="/images/HeadshotOutline.png"
         alt="Shelby Rackley's Face"
-        className="animate fadeInLeft three"
+        className="animate fadeIn three"
       />
       <div id="aboutText" className="animate fadeIn three">
         <p>Coming from a background in fine art,
