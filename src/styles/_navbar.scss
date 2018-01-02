@@ -101,7 +101,7 @@ nav {
                 transform: translateX(calc(-220px + -3vw));
             }
             button {
-                padding: 6px;
+                padding: 0;
                 &:hover {
                     transform: scale(1.5);
                 }
@@ -111,11 +111,11 @@ nav {
                     transition: all 1s ease;
                     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
                     &:hover {
+                        //display and transform keep safari from cutting off text-shadow
                         display: block;
                         -webkit-transform: translateZ(0);
                         color: #fff;
                         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $secondary-light-color, 0 0 30px $secondary-light-color, 0 0 40px $secondary-light-color, 0 0 50px $secondary-light-color, 0 0 75px $secondary-light-color;
-                        letter-spacing: 5px;
                     }
                 }
             }
