@@ -38,7 +38,7 @@ const data = [
 ];
 
 const AllProjects = () => (
-  <div className="section" style={{padding: '4vw'}}>
+  <div className="section" style={{ padding: '4vw' }}>
     <Header title="Work" />
     <div className="row">
       {
@@ -49,10 +49,18 @@ const AllProjects = () => (
               <div>{project.date}</div>
               <br />
               <div>
-                <a href={project.demo}>
+                <a
+                  href={project.demo}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   <button className="outline-button">Demo</button>
                 </a>
-                <a href={project.code}>
+                <a
+                  href={project.code}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   <button className="outline-button">Code</button>
                 </a>
                 <div>
