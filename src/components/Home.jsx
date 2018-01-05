@@ -1,6 +1,5 @@
 import React from 'react';
 import Typed from 'typed.js';
-import { NavLink } from 'react-router-dom';
 
 export default class Home extends React.Component {
   componentDidMount() {
@@ -11,7 +10,7 @@ export default class Home extends React.Component {
       strings,
       typeSpeed: 70,
       backSpeed: 40,
-      startDelay: 500,
+      startDelay: 1000,
     };
 
     this.typed = new Typed(this.el, options);
@@ -31,9 +30,6 @@ export default class Home extends React.Component {
 
         </div>
         <div className="bottom">
-          <NavLink to="/about" >
-            <button id="heroButton" className="shadow1 outline-button animate fadeInUp three">About</button>
-          </NavLink>
           <a
             href="/ShelbyRackley.pdf"
             download
