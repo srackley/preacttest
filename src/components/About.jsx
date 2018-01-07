@@ -6,11 +6,19 @@ const About = () => (
   <div className="section">
     <Header title="About" />
     <div id="headshotContainer">
-      <img
-        src="/images/HeadshotOutline.png"
-        alt="Shelby Rackley's Face"
-        className="animate fadeIn three"
-      />
+        <img
+          src="/images/HeadshotOutline.png"
+          alt="Shelby Rackley's Face"
+          className="animate fadeIn three"
+        />
+        <a href="/art" style={{
+          width: "50px",
+          height: "50px",
+          position: "absolute",
+          right:  "113px",
+          top: "100px",
+          zIndex: "9999999"
+        }} />
       <div id="aboutText" className="animate fadeIn three">
         <p>Coming from a background in fine art,
         I bring my eye for design,

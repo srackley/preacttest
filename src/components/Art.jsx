@@ -1,15 +1,6 @@
 import React from 'react';
 import Gallery from 'react-photo-gallery';
 
-const Art = () => (
-  <div>
-    <div style={{ height: '100px' }} />
-    <Gallery photos={PHOTO_SET} />
-  </div>
-);
-
-export default Art;
-
 const PHOTO_SET = [
   {
     src: '/portfolio/28.jpg',
@@ -192,3 +183,12 @@ const PHOTO_SET = [
     height: 4,
   },
 ];
+
+const Art = () => (
+  <div>
+    <div style={{ height: '100px' }} />
+    <Gallery photos={PHOTO_SET} />
+  </div>
+);
+
+export default Art;
