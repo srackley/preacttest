@@ -3,15 +3,25 @@ import Header from './Header';
 
 const data = [
   {
-    id: 1,
-    name: 'Cage Match',
+    id: 4,
+    name: 'Destination Slackbot',
+    position: 'Solo Developer',
+    code: 'https://github.com/srackley/slackbot',
+    image: '/images/Slackbot.png',
+    description: 'A Slack bot built using NodeJS microservices. It utilizes Wit.ai for natural language processing to provide facts, weather, and current time for a given location.',
+    date: 'January 2018',
+    tags: ['Node.js', 'Wit.ai', 'Express.js', 'Slack', 'Superagent', 'Websockets', 'Moment', 'Google Geocode API'],
+  },
+  {
+    id: 3,
+    name: 'Whiskr',
     position: 'Web Developer',
-    demo: 'https://cage-match.herokuapp.com/',
-    code: 'https://github.com/DatGreekChick/glamazonians',
-    image: '/images/CageMatch.png',
-    description: 'An easy to use, modern e-commerce site with persistent state and user authentification. Cage Match is an e-commerce website for purchasing Nicholas Cage roles.',
-    date: 'November 2017',
-    tags: ['e-commerce', 'OAUTH', 'Express.js', 'Node.js', 'Passport', 'React', 'Sequelize', 'Webpack'],
+    demo: 'https://youtu.be/qW5-C7skuU0',
+    code: 'https://github.com/srackley/whiskr',
+    image: '/images/Whiskr.png',
+    description: 'Whiskr is a Tinder-like web app for pairing users with local adoptable pets. Whiskr will streamline your pursuit of a cuddly companion by implementing a swiping mechanism to pair you with local pets.',
+    date: 'November 2017 - December 2017',
+    tags: ['PetFinder API', 'React', 'Node.js', 'Express.js', 'Sequelize', 'Create-React-App', 'React-Swipe-Card', 'Heroku', 'Nodemailer', 'Animate.CSS'],
   },
   {
     id: 2,
@@ -25,15 +35,15 @@ const data = [
     tags: ['eReader', 'React', 'Firebase', 'Axios', 'ePub', 'Node.js', 'Webpack'],
   },
   {
-    id: 3,
-    name: 'Whiskr',
+    id: 1,
+    name: 'Cage Match',
     position: 'Web Developer',
-    demo: 'https://youtu.be/qW5-C7skuU0',
-    code: 'https://github.com/Whiskr/whiskr',
-    image: '/images/Whiskr.png',
-    description: 'Whiskr is a Tinder-like web app for pairing users with local adoptable pets. Whiskr will streamline your pursuit of a cuddly companion by implementing a swiping mechanism to pair you with local pets.',
-    date: 'November 2017 - December 2017',
-    tags: ['React', 'Node.js', 'Express.js', 'Sequelize', 'Create-React-App', 'React-Swipe-Card', 'Heroku'],
+    demo: 'https://cage-match.herokuapp.com/',
+    code: 'https://github.com/srackley/e-Commerce',
+    image: '/images/CageMatch.png',
+    description: 'An easy to use, modern e-commerce site with persistent state and user authentification. Cage Match is an e-commerce website for purchasing Nicholas Cage roles.',
+    date: 'November 2017',
+    tags: ['OAUTH', 'Express.js', 'Node.js', 'Passport', 'React', 'Sequelize', 'Webpack'],
   },
 ];
 
@@ -49,13 +59,19 @@ const AllProjects = () => (
               <div>{project.date}</div>
               <br />
               <div>
-                <a
-                  href={project.demo}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <button className="outline-button">Demo</button>
-                </a>
+                {project.demo
+                ?
+                  <a
+                    href={project.demo}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <button className="outline-button">Demo</button>
+                  </a>
+              :
+              null
+            }
+
                 <a
                   href={project.code}
                   rel="noopener noreferrer"

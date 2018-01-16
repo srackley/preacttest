@@ -13,7 +13,6 @@
         color: white;
         font-family: "Rokkitt";
         h1 {
-            color: $secondary-light-color;
             text-align: left;
             margin: 0;
             padding: 0;
@@ -29,14 +28,10 @@
         position: absolute;
         bottom: 20px;
     }
-    #heroButton {
-        margin-top: 2vw;
-        font-size: calc(18px + 1vw);
-        padding: 8px;
-    }
     #resumeLink {
-        color: $primary-light-color;
+        color: $secondary-light-color;
         text-decoration: none;
+
         &:hover, &:visited {
             text-decoration: none;
         }

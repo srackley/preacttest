@@ -1,6 +1,8 @@
 .row {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-end;
 
     @media screen and (max-width: 1000px){
       .item {
@@ -11,7 +13,7 @@
 
     @media screen and (min-width: 1000px) {
       .item {
-        max-width: 30vw;
+        max-width: 45vw;
         margin: auto;
       }
     }
@@ -34,8 +36,8 @@
       }
 
       img {
-        min-height: 200px;
-        max-height: 350px;
+        min-height: 75%;
+        max-height: 100%;
         width: auto;
       }
     }
