@@ -59,13 +59,13 @@ class Navbar extends Component {
           </span>
           <span id="social">
             <a href="http://www.linkedin.com/in/shelbyrackley" rel="noopener noreferrer" target="_blank" >
-              <FontAwesome name="linkedin" />
+              <FontAwesome name="linkedin-square" />
             </a>
             <a href="http://www.github.com/srackley" rel="noopener noreferrer" target="_blank" >
-              <FontAwesome name="github" />
+              <FontAwesome name="github-square" />
             </a>
             <a href="mailto:shelbytrackley@gmail.com" >
-              <FontAwesome name="envelope-o" />
+              <FontAwesome name="envelope-square" />
             </a>
           </span>
         </ul>
