@@ -3,6 +3,27 @@ import Header from './Header';
 
 const data = [
   {
+    id: 6,
+    name: 'The Final Meltdown',
+    position: 'Developer',
+    code: 'https://github.com/srackley/TheFinalMeltdown/tree/glitch',
+    demo: 'https://thefinalmeltdown.glitch.me/',
+    image: '/images/TheFinalMeltdown.png',
+    description: 'The Final Meltdown is a virtual reality simulation of the melting polar ice caps as a result of climate change. Winner of the Best Open Source Hack at SheHacks Boston out of over 100 projects',
+    date: 'January 2018',
+    tags: ['A-Frame', 'Three.js', 'Javascript', 'HTML', 'WebVR'],
+  },
+  {
+    id: 5,
+    name: 'Legislative Accountability App',
+    position: 'Fullstack Developer',
+    code: 'https://github.com/ChuckBTaylor/laa-backend',
+    image: '/images/LAA.png',
+    description: 'An app providing a text-subscription service to inform citizens about which way their legislators are voting. Winner of the Unglitch Net-Neutrality Hackathon',
+    date: 'January 2018',
+    tags: ['Ruby on Rails', 'Twilio', 'Rest-Client', 'ProPublica Congress API', 'PostgreSQL', 'React', 'SQL'],
+  },
+  {
     id: 4,
     name: 'Destination Slackbot',
     position: 'Solo Developer',
@@ -57,6 +78,7 @@ const AllProjects = () => (
               <img src={project.image} alt={`Device display of ${project.name}`} />
               <h2>{project.name}</h2>
               <div>{project.date}</div>
+              <div>{project.position}</div>
               <br />
               <div>
                 {project.demo
