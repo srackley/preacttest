@@ -37,15 +37,10 @@ const About = () => (<div className="section">
   for turning a muddle of
   problems into a streamlined and creative solution.
              </p>
-      </div> <br />
+      </div>
       <div >
         <h2 > Education
         </h2>
-        <p > December 2017 |
-        <i > Software Engineering </i>
-          <br />
-          Grace Hopper Academy | New York, New York
-        </p>
         <p > May 2016 |
         <i > Master of Fine Arts in Studio Art </i>
           <br />

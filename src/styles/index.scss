@@ -25,12 +25,13 @@ body {
     .neon {
         color: #fff;
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $secondary-light-color, 0 0 30px $secondary-light-color, 0 0 40px $secondary-light-color, 0 0 50px $secondary-light-color, 0 0 75px $secondary-light-color;
-        letter-spacing: 5px;
+        letter-spacing: 8px;
     }
     h1 {
         color: $secondary-light-color;
         font-family: $script-font-family;
         font-size: calc(40px + 3vw);
+        font-weight: 100;
         margin-bottom: 0.6em;
         text-align: center;
     }
@@ -48,8 +49,8 @@ body {
             margin-right: auto;
         }
         .fa {
-            font-size: 100px;
-            padding: 20px;
+            font-size: calc(50px + 2vw);
+            padding: 20px 15px 0 15px;
         }
         .section {
             display: flex;
@@ -68,7 +69,7 @@ body {
             transform: translate(-50%, -50%);
         }
         .item {
-            padding: 5vw;
+            padding: 0 1vw 4vw;
             text-align: center;
             img {
                 width: 100%;
@@ -79,24 +80,6 @@ body {
             p {
                 text-decoration: none;
                 padding: 5px;
-            }
-        }
-        .outline-button {
-            margin: 5px;
-            font-size: calc(12px + 1vw);
-            color: white;
-            padding: 10px;
-            border: solid 2px $secondary-light-color;
-            background: transparent;
-            transition: all .5s ease;
-            &:hover {
-                background: $primary-medium-color;
-                border-color: $secondary-dark-color;
-                color: $secondary-dark-color;
-            }
-            &:active {
-                color: $primary-dark-color;
-                background: $secondary-light-color;
             }
         }
     }
@@ -111,8 +94,8 @@ body {
 @import '_navbar';
 @import '_home';
 @import '_about';
-@import '_allprojects';
+@import '_work';
 @import '_animations';
 @import '_shadows';
 @import '_header';
-@import '_services';
+@import '_skills';

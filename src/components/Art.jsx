@@ -186,6 +186,7 @@ const PHOTO_SET = [
 
 const Art = () => (
   <div>
+    {console.log('Yay! You found my artwork. Bathe in the beauty of my work.')}
     <div style={{ height: '100px' }} />
     <Gallery photos={PHOTO_SET} />
   </div>
