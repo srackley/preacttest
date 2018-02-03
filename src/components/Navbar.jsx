@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import FontAwesome from 'react-fontawesome';
+import SimpleLineIcon from 'react-simple-line-icons';
 
 class Navbar extends Component {
   constructor(props) {
@@ -58,14 +58,15 @@ class Navbar extends Component {
             </button>
           </span>
           <span id="social">
+
             <a href="http://www.linkedin.com/in/shelbyrackley" rel="noopener noreferrer" target="_blank" >
-              <FontAwesome name="linkedin-square" />
-            </a>
-            <a href="http://www.github.com/srackley" rel="noopener noreferrer" target="_blank" >
-              <FontAwesome name="github-square" />
+            <SimpleLineIcon name="social-linkedin" size="large" />
             </a>
             <a href="mailto:shelbytrackley@gmail.com" >
-              <FontAwesome name="envelope-square" />
+            <SimpleLineIcon name="envelope" size="large"/>
+            </a>
+            <a href="http://www.github.com/srackley" rel="noopener noreferrer" target="_blank" >
+            <SimpleLineIcon name="social-github" size="large"/>
             </a>
           </span>
         </ul>

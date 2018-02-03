@@ -2,7 +2,7 @@
   h2 {
     font-family: $neon-font-family;
     padding-top: 20px;
-    font-size: 26px;
+    font-size: 36px;
   }
   h3 {
     color: $secondary-light-color;
@@ -23,5 +23,6 @@
 
   p {
     color: white;
+    line-height: 22px;
   }
 }

@@ -25,7 +25,7 @@ export default class Home extends React.Component {
       <div className="jumbotron">
         <div className="text">
           <h1 id="hello" className="neon animate fadeIn one">HELLO!</h1>
-          <h2 className="animate fadeIn three">My name is Shelby Rackley. <br /> I am a Full Stack Web Developer in New York City. <br /> I am also <span id="typed" ref={(el) => { this.el = el; }} />
+          <h2 className="animate fadeIn three">My name is Shelby Rackley. <br /> I am a Software Engineer in New York City. <br /> I am also <span id="typed" ref={(el) => { this.el = el; }} />
           </h2>
 
         </div>

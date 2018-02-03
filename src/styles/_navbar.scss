@@ -93,7 +93,7 @@ nav {
         }
         #social {
             position: absolute;
-            top: calc(20px + 5vw);
+            top: calc(20px + 3vw);
             width: calc(12px + 1vw + .2em);
             right: -200px;
             transition: all .7s ease-in-out;
@@ -106,9 +106,8 @@ nav {
                 &:hover {
                     transform: scale(1.5);
                 }
-                span {
-                    font-size: calc(30px + 1vw);
-                    padding: 5px;
+                div {
+                    padding: 7px;
                     color: $secondary-light-color;
                     transition: all 1s ease;
                     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);

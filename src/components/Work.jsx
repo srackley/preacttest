@@ -79,36 +79,50 @@ const AllProjects = () => (
               <h2>{project.name}</h2>
               <div>{project.date}</div>
               <div>{project.position}</div>
-              <br />
-              <div>
+              <div className="links">
                 {project.demo
                 ?
-                  <a
-                    href={project.demo}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <button className="outline-button">Demo</button>
+                <div className="svg-wrapper">
+                <a
+                      href={project.demo}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                <svg height="40" width="90" xmlns="http://www.w3.org/2000/svg">
+                <rect className="shape" height="40" width="90" />
+                    </svg>
+                      <div className="text">
+                      Demo
+                  </div>
                   </a>
+                </div>
+
               :
               null
             }
-
-                <a
+                  <div className="svg-wrapper">
+                  <a
                   href={project.code}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <button className="outline-button">Code</button>
-                </a>
-                <div>
-                  <br />
+                  <svg height="40" width="90" xmlns="http://www.w3.org/2000/svg">
+
+                    <rect className="shape" height="40" width="90" />
+
+                    </svg>
+                        <div className="text">
+                        Code
+                    </div>
+                    </a>
+                  </div>
+              </div>
+              <div>
                   {project.description}
                 </div>
                 <br />
                 <div id="tags">{project.tags.join(' | ')}
                 </div>
-              </div>
             </div>
           ))
         }

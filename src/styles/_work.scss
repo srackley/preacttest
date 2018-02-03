@@ -12,11 +12,69 @@
         color: $secondary-medium-color;
       }
 
+      .links {
+        margin: 10px;
+        height: 40px;
+        a {
+          display: inline-block;
+          height: 40px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        }
+      }
+
+      .svg-wrapper {
+        display: inline-block;
+        height: 40px;
+        margin: 0 5px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 90px;
+      }
+
+      .shape {
+        fill: transparent;
+        stroke-dasharray: 90 254;
+        stroke-dashoffset: -134;
+        stroke-width: 8px;
+        stroke: #19f6e8;
+      }
+
+      .text {
+        color:#fff;
+        font-family: $neon-font-family;
+        font-size: 22px;
+        letter-spacing: 3px;
+        line-height: 30px;
+        position: relative;
+        top: -35px;
+      }
+
+      @keyframes draw {
+        0% {
+          stroke-dasharray: 90 254;
+          stroke-dashoffset: -134;
+          stroke-width: 8px;
+        }
+        100% {
+          stroke-dasharray: 260;
+          stroke-dashoffset: 0;
+          stroke-width: 2px;
+        }
+      }
+
+      .svg-wrapper:hover .shape {
+        -webkit-animation: 0.5s draw linear forwards;
+        animation: 0.5s draw linear forwards;
+      }
+
       h2 {
         font-family: $script-font-family;
         color: $secondary-light-color;
         padding: 0;
-        margin: 2px;
+        margin: 10px 0 5px;
         font-size: 20px;
         font-weight: 100;
       }
@@ -31,23 +89,5 @@
         height: calc(100px + 8vw);
         width: auto;
       }
-      .outline-button {
-        margin: 0 3px;
-        font-size: calc(14px + .2vw);
-        color: white;
-        padding: 4px;
-        border: solid 2px $secondary-light-color;
-        background: transparent;
-        transition: all .5s ease;
-        &:hover {
-            background: $primary-medium-color;
-            border-color: $secondary-dark-color;
-            color: $secondary-dark-color;
-        }
-        &:active {
-            color: $primary-dark-color;
-            background: $secondary-light-color;
-        }
-    }
     }
   }
