@@ -74,7 +74,7 @@ const AllProjects = () => (
     <div className="row">
       {
           data.map(project => (
-            <div className="animate fadeInUp two item" key={project.id}>
+            <div className="animate fadeInUp two work item" key={project.id}>
               <img src={project.image} alt={`Device display of ${project.name}`} />
               <h2>{project.name}</h2>
               <div>{project.date}</div>

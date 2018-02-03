@@ -1,6 +1,16 @@
 #servicesSection {
+  .skill {
+
+    padding: 10px;
+    img {
+      padding: 10px;
+      max-width: calc(75px + 3vw);
+     }
+  }
+
   h2 {
     font-family: $neon-font-family;
+    color: $secondary-light-color;
     padding-top: 20px;
     font-size: 36px;
   }
