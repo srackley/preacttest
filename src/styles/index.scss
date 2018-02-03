@@ -1,5 +1,6 @@
 $font-family-main: "Lato", sans-serif;
 $script-font-family: "Orbitron";
+$neon-font-family: 'Tron';
 $primary-dark-color: #0b0c10;
 $primary-medium-color: #0E131C;
 $primary-light-color: #c5c6c7;
@@ -25,7 +26,7 @@ body {
     .neon {
         color: #fff;
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $secondary-light-color, 0 0 30px $secondary-light-color, 0 0 40px $secondary-light-color, 0 0 50px $secondary-light-color, 0 0 75px $secondary-light-color;
-        letter-spacing: 8px;
+        letter-spacing: 1px;
     }
     h1 {
         color: $secondary-light-color;
@@ -99,3 +100,7 @@ body {
 @import '_shadows';
 @import '_header';
 @import '_skills';
+@font-face {
+    font-family: 'Tron';
+    src: url('./fonts/Tr2n.ttf');
+}

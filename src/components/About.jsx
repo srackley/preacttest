@@ -27,6 +27,8 @@ const About = () => (<div className="section">
       className="animate fadeIn three"
     >
       <div className="largeText">
+        <h2 > Experience
+        </h2>
         <p > Coming from a background in fine art, I bring my eye for design, knack
   for troubleshooting, and proclivity
   for exploration to my work as a full stack software developer. I craft responsive websites that are beautifully styled,
@@ -56,10 +58,10 @@ const About = () => (<div className="section">
           Harding University | Searcy, Arkansas
         </p>
       </div>
-       </div>
+    </div>
 
   </div>
-                     </div>
+</div>
 );
 
 export default About;

@@ -19,11 +19,11 @@ nav {
         font-weight: 100;
 
 
-        @media screen and (min-width: 600px) {
+        @media screen and (min-width: 700px) {
             #logo {
                 display: inline-block;
                 font-size: calc(12px + 1.5vw);
-                padding: 1vw;
+                padding: .2vw;
                 transition: all .5s ease;
                 &:hover {
                     transform: scale(1.2);
@@ -31,19 +31,17 @@ nav {
             }
             a,
             button {
-                font-size: calc(8px + 1.5vw);
-                padding: 1.2vw 1.2vw 3px;
+                padding: .5vw 1.2vw 7px;
             }
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 700px) {
             #logo {
                 display: none;
             }
             a,
             button {
-                font-size: 16px;
-                padding: 7px 7px 3px;
+                padding: 7px;
             }
         }
 
@@ -73,6 +71,7 @@ nav {
         }
         a,
         button {
+            font-size: calc(9px + 1.5vw);
             position: relative;
             font-family: $script-font-family;
             font-weight: 100;

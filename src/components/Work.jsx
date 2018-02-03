@@ -15,7 +15,7 @@ const data = [
   },
   {
     id: 5,
-    name: 'Legislative Accountability App',
+    name: 'Legislative Accountability',
     position: 'Fullstack Developer',
     code: 'https://github.com/ChuckBTaylor/laa-backend',
     image: '/images/LAA.png',
