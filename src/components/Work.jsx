@@ -37,7 +37,7 @@ const data = [
     id: 3,
     name: 'Whiskr',
     position: 'Web Developer',
-    demo: 'https://youtu.be/qW5-C7skuU0',
+    demo: 'https://whiskrapp.herokuapp.com/',
     code: 'https://github.com/srackley/whiskr',
     image: '/images/Whiskr.png',
     description: 'Whiskr is a Tinder-like web app for pairing users with local adoptable pets. Whiskr will streamline your pursuit of a cuddly companion by implementing a swiping mechanism to pair you with local pets.',
