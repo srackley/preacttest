@@ -1,4 +1,5 @@
-$font-family-main: "Lato", sans-serif;
+$font-family-main: "Lato",
+sans-serif;
 $script-font-family: "Orbitron";
 $neon-font-family: 'Tron';
 $primary-dark-color: #0b0c10;
@@ -7,7 +8,6 @@ $primary-light-color: #c5c6c7;
 $secondary-light-color: #66fcf1;
 $secondary-medium-color: #45a29e;
 $secondary-dark-color:#45a29e;
-
 * {
     box-sizing: border-box;
     &:focus {
@@ -28,7 +28,6 @@ body {
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $secondary-light-color, 0 0 30px $secondary-light-color, 0 0 40px $secondary-light-color, 0 0 50px $secondary-light-color, 0 0 75px $secondary-light-color;
         letter-spacing: 1px;
     }
-
     h1 {
         color: $secondary-light-color;
         font-family: $script-font-family;
@@ -71,7 +70,7 @@ body {
             transform: translate(-50%, -50%);
         }
         .item {
-            padding: 0 1vw 4vw;
+            padding: 0 1vw 0;
             text-align: center;
             img {
                 width: 100%;
