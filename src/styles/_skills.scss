@@ -1,17 +1,37 @@
 #servicesSection {
   .skill {
-
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
     padding: 10px;
+    margin: auto;
+    align-items: flex-start;
+    .three {
+      display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+margin: auto;
+height: auto;
+    }
+
+    p {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
     img {
-      padding: 10px;
-      max-width: calc(75px + 3vw);
+      padding-top: 30px;
+      max-width: calc(145px + 2vw);
      }
   }
 
   h2 {
     font-family: $neon-font-family;
     color: $secondary-light-color;
-    padding-top: 20px;
+    padding: 0;
+    margin: 20px 0 0;
     font-size: 36px;
   }
   h3 {
@@ -20,14 +40,16 @@
 
   @media screen and (max-width: 700px){
     .item {
-      max-width: 500px;
       margin: auto;
+      max-width: 450px;
     }
   }
 
   @media screen and (min-width: 700px) {
     .item {
-      max-width: 45vw;
+      max-width: 28vw;
+      margin: auto;
+      height: 350px;
     }
   }
 

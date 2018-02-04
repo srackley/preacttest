@@ -24,52 +24,6 @@
         }
       }
 
-      .svg-wrapper {
-        display: inline-block;
-        height: 40px;
-        margin: 0 5px;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 90px;
-      }
-
-      .shape {
-        fill: transparent;
-        stroke-dasharray: 90 254;
-        stroke-dashoffset: -134;
-        stroke-width: 8px;
-        stroke: #19f6e8;
-      }
-
-      .text {
-        color:#fff;
-        font-family: $neon-font-family;
-        font-size: 22px;
-        letter-spacing: 3px;
-        line-height: 30px;
-        position: relative;
-        top: -35px;
-      }
-
-      @keyframes draw {
-        0% {
-          stroke-dasharray: 90 254;
-          stroke-dashoffset: -134;
-          stroke-width: 8px;
-        }
-        100% {
-          stroke-dasharray: 260;
-          stroke-dashoffset: 0;
-          stroke-width: 2px;
-        }
-      }
-
-      .svg-wrapper:hover .shape {
-        -webkit-animation: 0.5s draw linear forwards;
-        animation: 0.5s draw linear forwards;
-      }
-
       h2 {
         font-family: $script-font-family;
         color: $secondary-light-color;

@@ -100,16 +100,14 @@ const AllProjects = () => (
               :
               null
             }
-                  <div className="svg-wrapper">
+                  <div className="svg-wrapper" >
                   <a
                   href={project.code}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <svg height="40" width="90" xmlns="http://www.w3.org/2000/svg">
-
                     <rect className="shape" height="40" width="90" />
-
                     </svg>
                         <div className="text">
                         Code
