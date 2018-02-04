@@ -21,7 +21,7 @@ const Services = () => (
               <p>I build modular, streamlined React components into a dynamic interface.</p>
             </div>
           </div>
-          <h3 className="animate fadeIn five">JavaScript, ES6, React, Redux, CSS/Sass, HTML</h3>
+          <h3 className="animate fadeIn two">JavaScript, ES6, React, Redux, CSS/Sass, HTML</h3>
       </div>
       <br/>
       <div className="skill animate fadeIn six">
@@ -40,7 +40,7 @@ const Services = () => (
               <p>I work with relational databases and SQL as well as with NoSQL.</p>
             </div>
           </div>
-        <h3 className="animate fadeIn eight">NodeJS, RESTful APIs, NoSQL, SQL, Express.js, PostgreSQL</h3>
+        <h3 className="animate fadeIn six">NodeJS, RESTful APIs, NoSQL, SQL, Express.js, PostgreSQL</h3>
       </div>
     </div>
   </div>
