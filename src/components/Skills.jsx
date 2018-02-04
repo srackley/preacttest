@@ -21,17 +21,17 @@ const Services = () => (
               <p>I build modular, streamlined React components into a dynamic interface.</p>
             </div>
           </div>
-          <h3>JavaScript, ES6, React, Redux, CSS/Sass, HTML</h3>
+          <h3 className="animate fadeIn five">JavaScript, ES6, React, Redux, CSS/Sass, HTML</h3>
       </div>
       <br/>
       <div className="skill animate fadeIn six">
         <h2>Back End</h2>
           <div className="threes">
-            <div className="item animate fadeIn seven">
+            <div className="item animate fadeIn six">
               <img src={require('../styles/icons/cloud.svg')} alt="Cloud" />
               <p>I develop APIs utilizing RESTful design patterns. I typically use Git for version control.</p>
             </div>
-            <div className="item animate fadeIn six">
+            <div className="item animate fadeIn seven">
               <img src={require('../styles/icons/algorithms.svg')} alt="Data and computer" />
               <p>I design, develop, and deploy backend services using Node.js to construct flexible microservice architectures.</p>
             </div>
@@ -40,7 +40,7 @@ const Services = () => (
               <p>I work with relational databases and SQL as well as with NoSQL.</p>
             </div>
           </div>
-        <h3>NodeJS, RESTful APIs, NoSQL, SQL, Express.js, PostgreSQL</h3>
+        <h3 className="animate fadeIn eight">NodeJS, RESTful APIs, NoSQL, SQL, Express.js, PostgreSQL</h3>
       </div>
     </div>
   </div>
