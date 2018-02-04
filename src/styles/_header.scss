@@ -4,9 +4,9 @@
 
 h1 {
   position: absolute;
-  left: 10px;
+  left: calc(10px + 1.5vw);
   font-size: calc(42px + 1vw);
-  top: calc(30px + 4vw);
+  top: calc(38px + 3.7vw);
   font-family: $neon-font-family;
   margin-top: 50px;
   color: black;

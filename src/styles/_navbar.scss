@@ -1,5 +1,4 @@
 nav {
-    padding-top: .2em;
     padding-bottom: 0;
     position: fixed;
     top: 0;
@@ -22,8 +21,7 @@ nav {
         @media screen and (min-width: 700px) {
             #logo {
                 display: inline-block;
-                font-size: calc(12px + 1.5vw);
-                padding: .2vw;
+                font-size: calc(12px + 1vw);
                 transition: all .5s ease;
                 &:hover {
                     transform: scale(1.2);
@@ -71,7 +69,7 @@ nav {
         }
         a,
         button {
-            font-size: calc(9px + 1.5vw);
+            font-size: calc(9px + 1vw);
             position: relative;
             font-family: $script-font-family;
             font-weight: 100;
