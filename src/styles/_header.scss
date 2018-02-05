@@ -26,6 +26,7 @@ h1 {
 
 .bar {
   height: 2px;
+  background-color: white;
 }
 
 .thin {
@@ -45,7 +46,8 @@ h1 {
 }
 
 .light {
-  background-color: white;
+  animation: blink 2s infinite alternate,
+  fadeInLeft 1s linear .2s;
 }
 
 .neonBars {

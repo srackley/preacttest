@@ -213,3 +213,13 @@
     -webkit-animation: 0.5s draw linear forwards;
     animation: 0.5s draw linear forwards;
 }
+
+.flicker {
+    animation: blink 0.01s infinite alternate;
+}
+
+@keyframes blink {
+    60% {
+        opacity: 0.7;
+    }
+}
