@@ -53,6 +53,7 @@ h1 {
 .neonBars {
   //display and transform keep safari from cutting off text-shadow
   display: block;
+  transform: translateZ(0);
   -webkit-transform: translateZ(0);
 box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $secondary-light-color, 0 0 30px $secondary-light-color, 0 0 40px $secondary-light-color, 0 0 50px $secondary-light-color, 0 0 75px $secondary-light-color;
 }
