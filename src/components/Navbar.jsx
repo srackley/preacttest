@@ -58,7 +58,6 @@ class Navbar extends Component {
             </button>
           </span>
           <span id="social">
-
             <a href="http://www.linkedin.com/in/shelbyrackley" rel="noopener noreferrer" target="_blank" >
             <SimpleLineIcon name="social-linkedin" size="large" />
             </a>
