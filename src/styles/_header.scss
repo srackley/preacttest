@@ -37,7 +37,7 @@
         margin-top: 9px;
     }
     .light {
-        animation: blink 2s infinite 2s alternate, fadeInLeft 1s linear .2s;
+        animation: blink 1s infinite 2s alternate, fadeInLeft .7s linear .2s;
     }
     .neonBars {
         //display and transform keep safari from cutting off text-shadow
