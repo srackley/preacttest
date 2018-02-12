@@ -3,6 +3,16 @@ import Header from './Header';
 
 const data = [
   {
+    id: 7,
+    name: 'Painting the Ocean',
+    position: 'Developer',
+    code: 'https://github.com/HackTheDeep/paint-the-ocean',
+    image: '/images/PaintingTheOcean.png',
+    description: 'Painting the Ocean is designed to identify the path of a particle or an oil spill on the coastline using computer visualization. I used data provided by the American Museum of Natural History during their Hack the Deep hackathon by researcher David Lindo Atichati.',
+    date: 'February 2018',
+    tags: ['Python', 'OpenCV', 'FFmpeg', 'VidStab', 'Docker'],
+  },
+  {
     id: 6,
     name: 'The Final Meltdown',
     position: 'Developer',
