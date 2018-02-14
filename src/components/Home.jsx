@@ -31,8 +31,8 @@ export default class Home extends React.Component {
         </div>
         <div className="bottom">
           <a
+            target="blank"
             href="/ShelbyRackley.pdf"
-            download
             id="resumeLink"
             className="animate fadeIn eight"
           >
