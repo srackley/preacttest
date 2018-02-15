@@ -6,6 +6,7 @@ import Skills from './Skills';
 import About from './About';
 import Art from './Art';
 import Navbar from './Navbar';
+import { default as Resume } from './Resume';
 
 const App = () => (
   <div id="outer-container">
@@ -16,6 +17,7 @@ const App = () => (
         <Route exact path="/skills" component={Skills} />
         <Route exact path="/work" component={Work} />
         <Route exact path="/art" component={Art} />
+        <Route exact path="/resume" component={Resume} />
         <Route exact path="/" component={Home} />
       </Switch>
     </main>

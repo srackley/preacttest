@@ -68,7 +68,7 @@ class Navbar extends Component {
             <SimpleLineIcon name="social-github" size="large"/>
             </a>
             <a
-            href="./ShelbyRackley.pdf" rel="noopener noreferrer" target="_blank"
+            href="/Resume"
             >
             <SimpleLineIcon
             name="info"
