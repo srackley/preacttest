@@ -29,16 +29,6 @@ export default class Home extends React.Component {
           </h2>
 
         </div>
-        <div className="bottom">
-          <a
-            target="blank"
-            href="/ShelbyRackley.pdf"
-            id="resumeLink"
-            className="animate fadeIn eight"
-          >
-            <h3 className="animate fadeIn eight">I am currently seeking full-time opportunities!</h3>
-          </a>
-        </div>
       </div>
     );
   }
