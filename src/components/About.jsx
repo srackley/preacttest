@@ -30,6 +30,7 @@ const About = () => (<div className="section">
       <div className="largeText">
         <h2 > Experience
         </h2>
+        <p>I'm currently working at BAMtech Media on projects for ESPN+ and Disney as a Protoyping Engineer.</p>
         <p > Coming from a background in fine art, I bring my eye for design, knack
   for troubleshooting, and proclivity
   for exploration to my work as a software engineer. My place in the world is at the intersection of creativity and logic. All projects are a problem to be solved, whether it’s to do with design, art, or code— only the tools change.
